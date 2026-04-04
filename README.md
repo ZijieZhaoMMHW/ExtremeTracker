@@ -1,7 +1,8 @@
 # ExtremeTracker.jl
-
 [![Julia](https://img.shields.io/badge/Julia-1.6+-9558B2?style=flat&logo=julia&logoColor=white)](https://julialang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Under development now with more features added soon
 
 A comprehensive Julia package for tracking and analyzing marine/atmospheric heat wave events in spatiotemporal data. This package implements three state-of-the-art algorithms for heat wave detection, tracking, and composite analysis.
 
