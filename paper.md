@@ -61,7 +61,5 @@ Measured Julia normalization calls took 27.05 and 25.86 seconds for the two mode
 
 The package retains attribution to Di Sun and Zijie Zhao for the original and modified MATLAB tracking code. Funding acknowledgements and any additional contributor credits will be completed by the authors before submission.
 
-# AI usage disclosure
-
 
 # References
