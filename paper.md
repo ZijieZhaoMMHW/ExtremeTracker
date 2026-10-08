@@ -1,5 +1,5 @@
 ---
-title: 'MHWTracking.jl: Marine heatwave tracking on regular and LLC ocean grids'
+title: 'ExtremeTracker.jl: Marine heatwave tracking on regular and LLC ocean grids'
 tags:
   - Julia
   - oceanography
