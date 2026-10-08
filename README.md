@@ -1,282 +1,119 @@
-# ExtremeTracker.jl
-[![Julia](https://img.shields.io/badge/Julia-1.6+-9558B2?style=flat&logo=julia&logoColor=white)](https://julialang.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# MHWTracking.jl
 
-## This version is currently under development, with additional features being added and tested. For the tracking method, we recommend using the [MATLAB version](https://github.com/ZijieZhaoMMHW/MHW_tracking), which has been fully tested and is more stable.
+A Julia package port of the local MATLAB marine heatwave tracking code. It provides daily spatial patches linked by temporal overlap, independent direct three-dimensional connectivity, regular four-dimensional connectivity, ECCO LLC four-dimensional connectivity, spatial smoothing, and event normalization.
 
-A comprehensive Julia package for tracking and analyzing marine/atmospheric heat wave events in spatiotemporal data. This package implements three state-of-the-art algorithms for heat wave detection, tracking, and composite analysis.
+## Installation and testing
 
-## Overview
+The local package root is `/Volumes/new_drive/lagrangian/julia`. It contains `Project.toml`, `src/`, `test/`, `examples/`, `validation/`, and `notebooks/`, alongside the original MATLAB files and input data retained during relocation. From a terminal, enter the package directory:
 
-**HeatWaveTracker.jl** provides three complementary methods for heat wave analysis:
+```sh
+cd /Volumes/new_drive/lagrangian/julia
+```
 
-1. **`hwtrack_nouniform`** - Spatially Coherent Tracking (Sun et al., 2023)
-2. **`Tracker`** (Ocetrac) - Spatiotemporally Coherent Tracking (Scannell et al., 2024)
-3. **`SpatialTemporalNormalization`** - Spatial-temporal normalization for composite analysis (Zhao et al., 2026)
-
-These methods can be used independently or combined to provide comprehensive heat wave event characterization from detection through composite analysis.
-
-## Features
-
-- 🔍 **Multiple Tracking Algorithms**: Choose from two state-of-the-art tracking methods
-- 🌊 **Handles Complex Events**: Track splitting, merging, and evolution of heat wave events
-- 📊 **Composite Analysis**: Normalize events to standard circular grids for inter-comparison
-- 🚀 **High Performance**: Written in Julia for computational efficiency
-- 🔧 **Flexible**: Works with various gridded temperature datasets (SST, 2m temperature, etc.)
-- 📈 **Rich Metrics**: Extract intensity, duration, area, and trajectory information
-
-## Installation
+Run from the package root:
 
 ```julia
 using Pkg
-Pkg.add(url="https://github.com/ZijieZhaoMMHW/HeatWaveTracker.jl")
+Pkg.activate(".")
+Pkg.instantiate()
+Pkg.test()
+using MHWTracking
 ```
 
-Or in the Julia REPL:
+In another project, use `Pkg.develop(path="/Volumes/new_drive/lagrangian/julia")`, or substitute the package's location on your machine. Both the package and module are named `MHWTracking`; the minimum Julia version is 1.10. MAT.jl reads v5/v7.3 MAT files. MiniQhull.jl builds the Delaunay meshes in `spn`; DelaunayTriangulation.jl supplies adaptive triangle-containment predicates.
+
+## Real three-dimensional data
 
 ```julia
-] add https://github.com/ZijieZhaoMMHW/HeatWaveTracker.jl
+using MHWTracking
+d = load_test_data(pwd();
+                   binary_rule=:positive)
+tracks = track_mhw_3d(d.mask, d.lon, d.lat, 4)
+println(length(tracks))
+println(tracks[1].day)
 ```
 
-### Dependencies
+The inspected input is `mhw_ts::Array{Float64,3}` in `mhw_ts.mat`, with dimensions 400×160×731 and coordinates in `lonlatoi.mat`. It contains NaNs and continuous values rather than a binary mask. Under the user-confirmed rule, `:positive` explicitly applies `isfinite(x) && x > 0`. `:raw` preserves all input values, including NaNs that MATLAB treats as nonzero; its output must not be interpreted as properly binarized marine heatwaves. Loading does not permute dimensions or apply smoothing.
+
+Complete example, from the package root: `julia --project=. examples/example_3d.jl`. The example and full-input validation default to the package root for `mhw_ts.mat` and `lonlatoi.mat`; `MHW_DATA_DIR` or an explicit directory argument selects another data location. Notebook 02 uses the same environment variable. Original root-level MATLAB files and `.mat` data are local inputs excluded from Git; the preserved sources in `validation/matlab` and small fixtures in `test/fixtures` remain part of the package. The argument `4` is the minimum daily patch size used for this validation and can be adjusted for the scientific application.
+
+## Four methods and their outputs
+
+| Function | Input order | Algorithm | Output |
+|---|---|---|---|
+| `track_mhw_3d(mask,lon,lat,nums=1)` | lon×lat×time | Daily 8-connectivity with periodic longitude; overlap ≥0.5; source split/merge logic | `Vector{Track3D}` |
+| `track_mhw_3d_connected(mask)` | lon×lat×time | Independent direct 26-connectivity, optionally 6; periodic longitude | `(tracks,info)`, `idx3` |
+| `track_mhw_4d_lonlat(mask)` | lon×lat×depth×time | 80-connectivity; periodic longitude | `(tracks,info)`, `idx4` |
+| `track_mhw_4d_llc(mask,topology)` | i×j×tile×depth×time | Per-tile 80-connectivity plus exact seams and depth/time offsets ±1 | `(tracks,info)`, `idx5` |
+
+All indices are one-based and column-major, matching MATLAB `sub2ind`. Latitude, depth, and time are not periodic. Nonzero numeric values, including NaN, are active; apply any land or validity mask explicitly when constructing the binary input. Julia arrays must retain the dimensions specified by the API, including singleton depth and time axes.
+
+`Track3D` retains `day`, `xloc`, `yloc`, `ori_day`, `ori_order`, `split_num`, and `split_day`. Coordinates are returned as Float64 values representing the same integer coordinates as MATLAB. Events follow MATLAB's closure order. The default minimum duration is 5; `min_duration` and `overlap_ratio` can explicitly override the original fixed thresholds. MATLAB requires `nums`, whereas Julia adds a convenience default of 1. During merging, existing events remain separate and receive portions of the current patch; splitting is recorded within the existing event. This event definition differs from direct connectivity.
+
+`IndexedTrack` retains `day::Vector{Int32}`, `idxN::Vector{Vector{UInt64}}`, and `nvoxels::Vector{UInt32}`. The `info` named tuple contains the original MATLAB statistics, including component counts, seam counts, and active boundary cells. Keywords:
+
+- `min_duration=5`: filter by the number of unique output days.
+- `time=[]`: local-to-global day labels, which may be nonconsecutive or repeated; connectivity always follows adjacent **local** time positions.
+- `mask_size=size(mask)`: global dimensions used for global linear indices.
+- `save_file=""`: optional MAT output containing `tracks` and `info`, using MAT.jl's file format.
+- `verbose=false`: enable progress summaries.
+- Regular four-dimensional tracking also supports `add_idx5_alias=false`.
 
 ```julia
-using Images
-using ImageMorphology
-using ImageSegmentation
-using Statistics
-using Interpolations
-using LinearAlgebra
+mask = falses(8, 6, 3, 7)
+mask[1, 3, 1, 1] = true
+mask[8, 4, 2, 2] = true
+tracks, info = track_mhw_4d_lonlat(mask; min_duration=1)
+@assert length(tracks) == 1
 ```
 
-## Quick Start
+## Full Tasman Sea normalization example
 
-### Method 1: Event Tracking with Splitting/Merging (Sun et al., 2023)
+Notebook [07_tasman_sea_spn](notebooks/07_tasman_sea_spn.ipynb) reproduces the original 230-day 2015–2016 Tasman Sea case with SST anomaly, both normalization modes, all five normalized times, three full-event GIFs, and the separate original global smoothing example. The five supplied MAT files are retained under `data/tasman_sea` and excluded from Git. See the [reproduction guide](docs/tasman_sea_example.md) for data alignment, MATLAB comparisons, and cache controls.
 
-This method tracks heat waves while explicitly handling event splitting and merging.
+`load_matlab_tracks(path)` reads the original MATLAB struct/cell arrays into `Vector{Track3D}` while retaining all seven fields and one-based indices. Run `julia --project=. examples/example_tasman_spn.jl` from the package root, or open notebook 07. Set `MHW_TASMAN_DATA_DIR` to use another directory containing the five files.
+
+## LLC topology
 
 ```julia
-using HeatWaveTracker
-
-# Load your temperature anomaly data (3D: lon, lat, time)
-# hw: binary mask of heat wave conditions (0/1)
-# lon_grid: longitude coordinates
-# lat_grid: latitude coordinates
-
-# Track heat waves
-tracks = hwtrack_nouniform(hw, lon_grid, lat_grid, nums=10)
-
-# Each track contains:
-# - day: time indices
-# - xloc: x-coordinates (cell arrays for each time step)
-# - yloc: y-coordinates (cell arrays for each time step)
-# - ori_day: origin day
-# - ori_order: origin order
-# - split_num: number of splits
-# - split_day: days when splits occurred
+topology = load_seam_edges("test/fixtures/llc90_topology.mat")
+a, b = topology.seam_edges[1, :]
+n2 = prod(topology.grid_size)
+mask = SparseMask((90,90,13,2,3), [a, b+n2+n2*2])
+tracks, info = track_mhw_4d_llc(mask, topology; min_duration=1)
+@assert length(tracks) == 1
 ```
 
-### Method 2: Object-Based Tracking (Scannell et al., 2023)
+The package includes the actual LLC90 grid and its 2,312 seam pairs, with XC/YC/Z from the user-provided files. `seamEdges` is an N×2 table of horizontal `(i,j,tile)` linear indices; the explicit pairs encode orientation and endpoint mappings. Consecutive tile numbers do not imply spatial adjacency, and no additional lateral seam diagonals are introduced. Reuse `LLCTopology` across calls. `SparseMask` supports sparse large inputs and synthetic tests; ordinary arrays are also accepted.
 
-This method uses morphological operations and 3D connectivity for robust tracking.
+## Auxiliary functions
 
 ```julia
-using HeatWaveTracker
-
-# Create tracker object
-tracker = Tracker(
-    data,                    # 3D temperature array (time, y, x)
-    mask,                    # Binary mask (1=valid ocean, 0=land)
-    radius=8,                # Morphological radius
-    min_size_quartile=0.75,  # Size threshold (75th percentile)
-    positive=true            # Track positive anomalies
-)
-
-# Run tracking
-labels, metadata = track(tracker)
-
-# Results:
-# - labels: 3D array with unique IDs for each heat wave
-# - metadata: dictionary with tracking statistics
-println("Tracked $(metadata["final_objects_tracked"]) heat wave events")
+indices = grid_nearby_index([0.,1.,90.,359.], [-2.,0.,3.], 2.)
+smoothed = convzz(ones(4,3), indices, trues(4,3))
 ```
 
-### Method 3: Spatial-Temporal Normalization (Zhao et al., in review)
+`grid_nearby_index` selects neighbors within coordinate windows ±res, preserving the original meshgrid index order and 0..360 longitude logic. `convzz` applies a neighborhood nanmean at centers whose ocean mask is nonzero; it does not additionally mask neighboring land cells.
 
-Normalize tracked events to a standard circular grid for composite analysis.
+`spn(tracks,lon,lat,anomaly,norm_flag)` returns the original five MATLAB outputs: maximum event radii, daily spatial samples, a 100×100×5×events×1 normalized array, and unit x/y grids. `anomaly` must start at the earliest day across all tracks; a 4-D input uses only its first variable. Arithmetic coordinate centers, planar distance approximation, 100×100 polar sampling, and time extrapolation from `(1:n)/n` follow the local source. There is no added longitude correction or area weighting. With `norm_flag==0`, values outside the event boundary are zero; other flags retain the field. Empty events, fewer than two time samples, and degenerate interpolation points raise explicit errors.
 
-```julia
-using HeatWaveTracker
+## Validation and performance
 
-# Step 1: Calculate maximum radius for each track
-radius_max = calculate_max_radius(tracks, lon_grid, lat_grid)
+Seven [Julia Jupyter notebooks](notebooks/README.md) include recorded execution outputs for event evolution, differences between the three-dimensional methods, four-dimensional boundaries, LLC seams, `spn` comparisons, and performance. Browse the [HTML gallery and notebook navigation](notebooks/gallery.html). All figures are exported as PNG/PDF; plotting and IJulia use a separate environment without adding core package dependencies.
 
-# Step 2: Normalize to circular grid
-normalized_data = spatial_temporal_normalization(
-    tracks,           # Tracked events from Method 1 or 2
-    data_anomaly,     # 4D anomaly data (lon, lat, time, variables)
-    lon_grid,         # Longitude coordinates
-    lat_grid,         # Latitude coordinates
-    radius_max,       # Maximum radii
-    res=50,           # Spatial resolution (50x50 grid)
-    n_phases=5        # Temporal phases (0, 0.25, 0.5, 0.75, 1.0)
-)
+See the [source mapping](docs/algorithm_mapping.md), [validation report](docs/validation_report.md), and [performance report](docs/performance.md). Reproducible scripts:
 
-# Step 3: Compute composite mean
-composite = compute_composite(normalized_data, method="mean")
-
-# Output dimensions: (res, res, n_phases, n_variables)
+```sh
+julia --project=. test/runtests.jl
+julia --project=. validation/validate_seams.jl
+julia --project=. validation/validate_real.jl
+julia --project=. benchmark/benchmark_tracking.jl
 ```
 
+`validation/matlab/generate_reference.m` calls the preserved original source to generate small fixtures; `real_reference.m` generates the full real-data reference. Synthetic four-dimensional validation does not establish equivalence on real production four-dimensional inputs. The independent three-dimensional API is an explicitly documented 6/26-connectivity extension: the local and GitHub source contain only an embedded two-dimensional helper, not the standalone three-dimensional file described in the request.
 
-## Method Comparison
-
-| Feature | Sun et al. (2023) | Scannell et al. (2023) |
-|---------|-------------------|------------------------|
-| **Splitting/Merging** | Explicit tracking | Implicit via connectivity |
-| **Morphological Ops** | No | Yes (closing/opening) |
-| **Size Filtering** | Fixed threshold | Percentile-based |
-| **Best For** | Complex evolution | Clean boundaries |
-| **Speed** | Slow | Fast |
-| **Memory** | Moderate | Small |
-
-**Recommendation**: 
-- Use **Sun et al.** for tracking events with complex splitting/merging behavior
-- Use **Scannell et al.** for cleaner event boundaries and detailed morphological filtering
-- Both methods produce compatible output for normalization
-
-## Key Parameters
-
-### hwtrack_nouniform
-- `nums`: Minimum number of pixels for valid heat wave (default: 10)
-- `para_alpha`: Overlap threshold for tracking (default: 0.5)
-
-### Tracker (Ocetrac)
-- `radius`: Morphological structuring element radius (recommended: 4-10)
-- `min_size_quartile`: Size threshold as quantile (0-1, recommended: 0.75)
-- `positive`: Track positive (true) or negative (false) anomalies
-
-### SpatialTemporalNormalization
-- `res`: Spatial resolution of normalized grid (default: 50)
-- `n_phases`: Number of temporal phases (default: 5)
-
-## Output Data Structures
-
-### Track Structure
-```julia
-struct Track
-    day::Vector{Int}                    # Time indices
-    xloc::Vector{Vector{Float32}}       # X-coordinates per timestep
-    yloc::Vector{Vector{Float32}}       # Y-coordinates per timestep
-    ori_day::Int                        # Origin day
-    ori_order::Int                      # Origin order
-    split_num::Vector{Int}              # Split counts
-    split_day::Vector{Int}              # Split days
-end
-```
-
-### Normalized Data
-5D Array: `(spatial_x, spatial_y, temporal_phase, track_id, variable)`
-- Dimensions 1-2: Normalized circular grid (polar coordinates)
-- Dimension 3: Lifecycle phase (0=genesis, 1=termination)
-- Dimension 4: Individual track/event ID
-- Dimension 5: Variable (e.g., SST, SLP, wind)
-
-## Applications
-
-This package has been used for:
-- 🌊 Marine heat wave tracking and characterization
-- 🌡️ Atmospheric heat wave analysis  
-- 🌀 Composite analysis of extreme events
-- 📊 Statistical analysis of heat wave properties
-- 🔬 Climate model validation
-
-## Performance Tips
-
-1. **Use appropriate data resolution**: 0.25° to 1° works well for global analysis
-2. **Adjust parameters based on scale**: Larger radius for larger events
-3. **Pre-filter small events**: Use `nums` or `min_size_quartile` to reduce memory
-4. **Parallel processing**: Julia's built-in parallelism can speed up tracking
-5. **Memory management**: Process time chunks for very long datasets
-
-## Citation
-
-If you use this package, please cite the relevant methods:
-
-**For hwtrack_nouniform:**
-```bibtex
-@article{sun2023,
-  title={Characterizing global marine heatwaves under a spatio-temporal framework},
-  author={Sun, D. and Jing, Z. and Li, F. and Wu, L.},
-  journal={Progress in Oceanography},
-  volume={211},
-  pages={102947},
-  year={2023}
-}
-```
-
-**For Tracker (Ocetrac):**
-```bibtex
-@article{scannell2023,
-  title={Spatiotemporal Evolution of Marine Heatwaves Globally},
-  author={Scannell, H. A. and Cai, C. and Thompson, L. and Whitt, D. B. and Gagne, D. J. and Abernathey, R.},
-  journal={Journal of Geophysical Research: Oceans},
-  year={2023}
-}
-```
-
-
-
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Development
-
-### Running Tests
-```julia
-using Pkg
-Pkg.test("HeatWaveTracker")
-```
-
-### Building Documentation
-```julia
-using Pkg
-Pkg.activate("docs")
-include("docs/make.jl")
-```
-
-## Troubleshooting
-
-**Common Issues:**
-
-1. **Memory errors with large datasets**: Process data in chunks
-2. **No events detected**: Check threshold and `min_size_quartile` parameters
-3. **Tracking stops prematurely**: Verify data continuity and mask consistency
-4. **Interpolation errors in normalization**: Ensure sufficient valid data points
-
-See [Issues](https://github.com/yourusername/HeatWaveTracker.jl/issues) for more help.
+Methods: [Sun et al. 2023](https://doi.org/10.1016/j.pocean.2022.102947), [Zhao et al. 2026](https://doi.org/10.1038/s41598-026-40354-4). Reference code: [MHW_tracking](https://github.com/ZijieZhaoMMHW/MHW_tracking). The downloaded `mhwtrack`/`spn` files match the local files. The repository README gives a different argument order from the source; this package uses the source's mask-first order.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-
-## Related Projects
-
-- [marineHeatWaves (Python)](https://github.com/ecjoliver/marineHeatWaves)
-- [heatwaveR (R)](https://github.com/robwschlegel/heatwaveR)
-- [Ocetrac (Python)](https://github.com/ocetrac/ocetrac)
-
----
-
-**Keywords**: heat waves, marine heat waves, extreme events, climate, tracking, composite analysis, spatiotemporal analysis, Julia
-
+GPL-3.0, following the reference MATLAB repository; see LICENSE. Attribution to original author Sun Di and modifying author Zijie Zhao is retained.

@@ -1,0 +1,27 @@
+Path references updated after relocation to /Volumes/new_drive/lagrangian/julia; numerical output retained from the original diagnostic.
+Precompiling packages...
+    MHWTracking Being precompiled by another process (pid: 13998, pidfile: /Volumes/new_drive/lagrangian/julia/.julia_depot/compiled/v1.12/MHWTracking/VkIuC_Kj6vT.ji.pidfile)
+   1721.8 ms  ✓ MHWTracking
+  1 dependency successfully precompiled in 2 seconds. 93 already precompiled.
+flag=0 radius=[120.5105674416054] MATLAB=120.5105674416054
+NaN mismatch=18 finite maxerr=1.4210854715202004e-14
+Zero-mask mismatch=0
+CartesianIndex(4, 1, 1) julia=NaN matlab=-5.550394418782161
+CartesianIndex(5, 1, 1) julia=NaN matlab=-5.549537244397445
+CartesianIndex(6, 1, 1) julia=NaN matlab=-5.548680070012729
+CartesianIndex(2, 100, 1) julia=-5.5521087675515925 matlab=NaN
+CartesianIndex(3, 100, 1) julia=-5.551251593166877 matlab=NaN
+CartesianIndex(6, 100, 1) julia=-5.548680070012729 matlab=NaN
+CartesianIndex(4, 1, 3) julia=NaN matlab=2.4496055812178392
+CartesianIndex(5, 1, 3) julia=NaN matlab=2.4504627556025547
+flag=1 radius=[120.5105674416054] MATLAB=120.5105674416054
+NaN mismatch=18 finite maxerr=1.4210854715202004e-14
+Zero-mask mismatch=0
+CartesianIndex(4, 1, 1) julia=NaN matlab=-5.550394418782161
+CartesianIndex(5, 1, 1) julia=NaN matlab=-5.549537244397445
+CartesianIndex(6, 1, 1) julia=NaN matlab=-5.548680070012729
+CartesianIndex(2, 100, 1) julia=-5.5521087675515925 matlab=NaN
+CartesianIndex(3, 100, 1) julia=-5.551251593166877 matlab=NaN
+CartesianIndex(6, 100, 1) julia=-5.548680070012729 matlab=NaN
+CartesianIndex(4, 1, 3) julia=NaN matlab=2.4496055812178392
+CartesianIndex(5, 1, 3) julia=NaN matlab=2.4504627556025547

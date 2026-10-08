@@ -1,0 +1,29 @@
+Precompiling packages...
+   1093.0 ms  ✓ MHWTracking
+  1 dependency successfully precompiled in 1 seconds. 93 already precompiled.
+event=1 day=1.0 points=37 MATLAB alpha=16.534247957768944 max=13812.541515805344 Julia border=20 MATLAB border=20 vertex set difference=0
+event=1 day=2.0 points=37 MATLAB alpha=16.534247957768944 max=13812.541515805344 Julia border=20 MATLAB border=20 vertex set difference=0
+event=1 day=3.0 points=37 MATLAB alpha=16.534247957768944 max=13812.541515805344 Julia border=20 MATLAB border=20 vertex set difference=0
+event=1 day=4.0 points=37 MATLAB alpha=16.534247957768944 max=13812.541515805344 Julia border=20 MATLAB border=20 vertex set difference=0
+event=1 day=5.0 points=37 MATLAB alpha=16.534247957768944 max=13812.541515805344 Julia border=20 MATLAB border=20 vertex set difference=0
+event=1 day=6.0 points=23 MATLAB alpha=16.479481564178712 max=26.67469079446457 Julia border=22 MATLAB border=22 vertex set difference=0
+event=2 day=1.0 points=27 MATLAB alpha=16.40923379645493 max=241.52961804677426 Julia border=18 MATLAB border=18 vertex set difference=0
+event=2 day=2.0 points=29 MATLAB alpha=16.406276429062082 max=241.54739463994002 Julia border=18 MATLAB border=18 vertex set difference=0
+event=2 day=3.0 points=29 MATLAB alpha=16.406276429062082 max=241.54739463994002 Julia border=18 MATLAB border=18 vertex set difference=0
+event=2 day=4.0 points=37 MATLAB alpha=16.405097759813117 max=13380.459369360768 Julia border=21 MATLAB border=21 vertex set difference=0
+event=2 day=5.0 points=37 MATLAB alpha=16.405097759813117 max=13380.459369360768 Julia border=21 MATLAB border=21 vertex set difference=0
+event=2 day=6.0 points=37 MATLAB alpha=16.405097759813117 max=13380.459369360768 Julia border=21 MATLAB border=21 vertex set difference=0
+event=2 day=7.0 points=37 MATLAB alpha=16.405097759813117 max=13380.459369360768 Julia border=21 MATLAB border=21 vertex set difference=0
+event=2 day=8.0 points=39 MATLAB alpha=29.324522518136625 max=13390.673849024384 Julia border=20 MATLAB border=20 vertex set difference=0
+event=3 day=1.0 points=55 MATLAB alpha=18.163181039546284 max=1352.073860200477 Julia border=33 MATLAB border=33 vertex set difference=0
+event=3 day=2.0 points=67 MATLAB alpha=18.170430257157964 max=1350.9803741621677 Julia border=36 MATLAB border=36 vertex set difference=0
+event=3 day=3.0 points=67 MATLAB alpha=18.170430257157964 max=1350.9803741621677 Julia border=36 MATLAB border=36 vertex set difference=0
+event=3 day=4.0 points=99 MATLAB alpha=18.277225009968124 max=2518.0623709815914 Julia border=53 MATLAB border=53 vertex set difference=0
+event=3 day=5.0 points=99 MATLAB alpha=18.277225009968124 max=2518.0623709815914 Julia border=53 MATLAB border=53 vertex set difference=0
+event=3 day=6.0 points=99 MATLAB alpha=18.277225009968124 max=2518.0623709815914 Julia border=53 MATLAB border=53 vertex set difference=0
+event=3 day=7.0 points=97 MATLAB alpha=18.277753718563226 max=2517.9246430053367 Julia border=53 MATLAB border=53 vertex set difference=0
+event=3 day=8.0 points=61 MATLAB alpha=58.65475702349034 max=1372.9235177582382 Julia border=35 MATLAB border=36 vertex set difference=0
+Julia extra edges=Set([(48, 53)])
+MATLAB extra edges=Set([(48, 49), (49, 53)])
+Julia computed critical=69.34253590937642 triangle=(53, 48, 49)
+Near-critical radii=[(58.654757023490355, (54, 53, 49))]

@@ -1,0 +1,858 @@
+Path references updated after relocation to /Volumes/new_drive/lagrangian/julia; numerical output retained from the original diagnostic.
+merge: Error During Test at /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:5
+  Got exception outside of a @test
+  BoundsError: attempt to access 1×2 Matrix{Any} at index [3]
+  Stacktrace:
+    [1] throw_boundserror(A::Matrix{Any}, I::Tuple{Int64})
+      @ Base ./essentials.jl:15
+    [2] getindex
+      @ ./essentials.jl:919 [inlined]
+    [3] #12
+      @ ./none:-1 [inlined]
+    [4] iterate
+      @ ./generator.jl:48 [inlined]
+    [5] collect(itr::Base.Generator{Vector{Matrix{Any}}, MAT.MAT_types.var"#12#13"{Int64}})
+      @ Base ./array.jl:790
+    [6] getindex(arr::MatlabStructArray{2}, s::Int64)
+      @ MAT.MAT_types /Volumes/new_drive/lagrangian/julia/.julia_depot/packages/MAT/uRfDC/src/MAT_types.jl:264
+    [7] #structvec##0
+      @ ./none:-1 [inlined]
+    [8] iterate
+      @ ./generator.jl:48 [inlined]
+    [9] collect_to!(dest::Vector{Dict{String, Any}}, itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}}, offs::Int64, st::Int64)
+      @ Base ./array.jl:848
+   [10] collect_to_with_first!(dest::Vector{Dict{String, Any}}, v1::Dict{String, Any}, itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}}, st::Int64)
+      @ Base ./array.jl:826
+   [11] collect(itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}})
+      @ Base ./array.jl:800
+   [12] structvec
+      @ /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:6 [inlined]
+   [13] overlap_from_mat(x::MatlabStructArray{2})
+      @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:10
+   [14] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:8 [inlined]
+   [15] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [16] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:6 [inlined]
+   [17] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [18] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:2
+   [19] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:307
+   [20] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4
+   [21] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [22] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4 [inlined]
+   [23] include(mod::Module, _path::String)
+      @ Base ./Base.jl:306
+   [24] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:317
+   [25] _start()
+      @ Base ./client.jl:550
+two_events: Error During Test at /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:5
+  Got exception outside of a @test
+  BoundsError: attempt to access 1×2 Matrix{Any} at index [3]
+  Stacktrace:
+    [1] throw_boundserror(A::Matrix{Any}, I::Tuple{Int64})
+      @ Base ./essentials.jl:15
+    [2] getindex
+      @ ./essentials.jl:919 [inlined]
+    [3] #12
+      @ ./none:-1 [inlined]
+    [4] iterate
+      @ ./generator.jl:48 [inlined]
+    [5] collect(itr::Base.Generator{Vector{Matrix{Any}}, MAT.MAT_types.var"#12#13"{Int64}})
+      @ Base ./array.jl:790
+    [6] getindex(arr::MatlabStructArray{2}, s::Int64)
+      @ MAT.MAT_types /Volumes/new_drive/lagrangian/julia/.julia_depot/packages/MAT/uRfDC/src/MAT_types.jl:264
+    [7] #structvec##0
+      @ ./none:-1 [inlined]
+    [8] iterate
+      @ ./generator.jl:48 [inlined]
+    [9] collect_to!(dest::Vector{Dict{String, Any}}, itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}}, offs::Int64, st::Int64)
+      @ Base ./array.jl:848
+   [10] collect_to_with_first!(dest::Vector{Dict{String, Any}}, v1::Dict{String, Any}, itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}}, st::Int64)
+      @ Base ./array.jl:826
+   [11] collect(itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}})
+      @ Base ./array.jl:800
+   [12] structvec
+      @ /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:6 [inlined]
+   [13] overlap_from_mat(x::MatlabStructArray{2})
+      @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:10
+   [14] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:8 [inlined]
+   [15] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [16] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:6 [inlined]
+   [17] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [18] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:2
+   [19] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:307
+   [20] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4
+   [21] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [22] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4 [inlined]
+   [23] include(mod::Module, _path::String)
+      @ Base ./Base.jl:306
+   [24] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:317
+   [25] _start()
+      @ Base ./client.jl:550
+random_02: Error During Test at /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:5
+  Got exception outside of a @test
+  BoundsError: attempt to access 1×0 Matrix{Any} at index [1]
+  Stacktrace:
+    [1] throw_boundserror(A::Matrix{Any}, I::Tuple{Int64})
+      @ Base ./essentials.jl:15
+    [2] getindex
+      @ ./essentials.jl:919 [inlined]
+    [3] #12
+      @ ./none:-1 [inlined]
+    [4] iterate
+      @ ./generator.jl:48 [inlined]
+    [5] collect(itr::Base.Generator{Vector{Matrix{Any}}, MAT.MAT_types.var"#12#13"{Int64}})
+      @ Base ./array.jl:790
+    [6] getindex(arr::MatlabStructArray{2}, s::Int64)
+      @ MAT.MAT_types /Volumes/new_drive/lagrangian/julia/.julia_depot/packages/MAT/uRfDC/src/MAT_types.jl:264
+    [7] #structvec##0
+      @ ./none:-1 [inlined]
+    [8] iterate
+      @ ./generator.jl:48 [inlined]
+    [9] collect(itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}})
+      @ Base ./array.jl:790
+   [10] structvec
+      @ /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:6 [inlined]
+   [11] overlap_from_mat(x::MatlabStructArray{2})
+      @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:10
+   [12] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:8 [inlined]
+   [13] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [14] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:6 [inlined]
+   [15] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [16] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:2
+   [17] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:307
+   [18] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4
+   [19] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [20] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4 [inlined]
+   [21] include(mod::Module, _path::String)
+      @ Base ./Base.jl:306
+   [22] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:317
+   [23] _start()
+      @ Base ./client.jl:550
+random_03: Error During Test at /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:5
+  Got exception outside of a @test
+  BoundsError: attempt to access 1×0 Matrix{Any} at index [1]
+  Stacktrace:
+    [1] throw_boundserror(A::Matrix{Any}, I::Tuple{Int64})
+      @ Base ./essentials.jl:15
+    [2] getindex
+      @ ./essentials.jl:919 [inlined]
+    [3] #12
+      @ ./none:-1 [inlined]
+    [4] iterate
+      @ ./generator.jl:48 [inlined]
+    [5] collect(itr::Base.Generator{Vector{Matrix{Any}}, MAT.MAT_types.var"#12#13"{Int64}})
+      @ Base ./array.jl:790
+    [6] getindex(arr::MatlabStructArray{2}, s::Int64)
+      @ MAT.MAT_types /Volumes/new_drive/lagrangian/julia/.julia_depot/packages/MAT/uRfDC/src/MAT_types.jl:264
+    [7] #structvec##0
+      @ ./none:-1 [inlined]
+    [8] iterate
+      @ ./generator.jl:48 [inlined]
+    [9] collect(itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}})
+      @ Base ./array.jl:790
+   [10] structvec
+      @ /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:6 [inlined]
+   [11] overlap_from_mat(x::MatlabStructArray{2})
+      @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:10
+   [12] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:8 [inlined]
+   [13] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [14] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:6 [inlined]
+   [15] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [16] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:2
+   [17] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:307
+   [18] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4
+   [19] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [20] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4 [inlined]
+   [21] include(mod::Module, _path::String)
+      @ Base ./Base.jl:306
+   [22] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:317
+   [23] _start()
+      @ Base ./client.jl:550
+random_05: Error During Test at /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:5
+  Got exception outside of a @test
+  BoundsError: attempt to access 1×2 Matrix{Any} at index [3]
+  Stacktrace:
+    [1] throw_boundserror(A::Matrix{Any}, I::Tuple{Int64})
+      @ Base ./essentials.jl:15
+    [2] getindex
+      @ ./essentials.jl:919 [inlined]
+    [3] #12
+      @ ./none:-1 [inlined]
+    [4] iterate
+      @ ./generator.jl:48 [inlined]
+    [5] collect(itr::Base.Generator{Vector{Matrix{Any}}, MAT.MAT_types.var"#12#13"{Int64}})
+      @ Base ./array.jl:790
+    [6] getindex(arr::MatlabStructArray{2}, s::Int64)
+      @ MAT.MAT_types /Volumes/new_drive/lagrangian/julia/.julia_depot/packages/MAT/uRfDC/src/MAT_types.jl:264
+    [7] #structvec##0
+      @ ./none:-1 [inlined]
+    [8] iterate
+      @ ./generator.jl:48 [inlined]
+    [9] collect_to!(dest::Vector{Dict{String, Any}}, itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}}, offs::Int64, st::Int64)
+      @ Base ./array.jl:848
+   [10] collect_to_with_first!(dest::Vector{Dict{String, Any}}, v1::Dict{String, Any}, itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}}, st::Int64)
+      @ Base ./array.jl:826
+   [11] collect(itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}})
+      @ Base ./array.jl:800
+   [12] structvec
+      @ /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:6 [inlined]
+   [13] overlap_from_mat(x::MatlabStructArray{2})
+      @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:10
+   [14] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:8 [inlined]
+   [15] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [16] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:6 [inlined]
+   [17] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [18] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:2
+   [19] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:307
+   [20] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4
+   [21] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [22] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4 [inlined]
+   [23] include(mod::Module, _path::String)
+      @ Base ./Base.jl:306
+   [24] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:317
+   [25] _start()
+      @ Base ./client.jl:550
+random_07: Error During Test at /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:5
+  Got exception outside of a @test
+  BoundsError: attempt to access 1×0 Matrix{Any} at index [1]
+  Stacktrace:
+    [1] throw_boundserror(A::Matrix{Any}, I::Tuple{Int64})
+      @ Base ./essentials.jl:15
+    [2] getindex
+      @ ./essentials.jl:919 [inlined]
+    [3] #12
+      @ ./none:-1 [inlined]
+    [4] iterate
+      @ ./generator.jl:48 [inlined]
+    [5] collect(itr::Base.Generator{Vector{Matrix{Any}}, MAT.MAT_types.var"#12#13"{Int64}})
+      @ Base ./array.jl:790
+    [6] getindex(arr::MatlabStructArray{2}, s::Int64)
+      @ MAT.MAT_types /Volumes/new_drive/lagrangian/julia/.julia_depot/packages/MAT/uRfDC/src/MAT_types.jl:264
+    [7] #structvec##0
+      @ ./none:-1 [inlined]
+    [8] iterate
+      @ ./generator.jl:48 [inlined]
+    [9] collect(itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}})
+      @ Base ./array.jl:790
+   [10] structvec
+      @ /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:6 [inlined]
+   [11] overlap_from_mat(x::MatlabStructArray{2})
+      @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:10
+   [12] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:8 [inlined]
+   [13] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [14] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:6 [inlined]
+   [15] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [16] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:2
+   [17] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:307
+   [18] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4
+   [19] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [20] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4 [inlined]
+   [21] include(mod::Module, _path::String)
+      @ Base ./Base.jl:306
+   [22] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:317
+   [23] _start()
+      @ Base ./client.jl:550
+random_08: Error During Test at /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:5
+  Got exception outside of a @test
+  BoundsError: attempt to access 1×0 Matrix{Any} at index [1]
+  Stacktrace:
+    [1] throw_boundserror(A::Matrix{Any}, I::Tuple{Int64})
+      @ Base ./essentials.jl:15
+    [2] getindex
+      @ ./essentials.jl:919 [inlined]
+    [3] #12
+      @ ./none:-1 [inlined]
+    [4] iterate
+      @ ./generator.jl:48 [inlined]
+    [5] collect(itr::Base.Generator{Vector{Matrix{Any}}, MAT.MAT_types.var"#12#13"{Int64}})
+      @ Base ./array.jl:790
+    [6] getindex(arr::MatlabStructArray{2}, s::Int64)
+      @ MAT.MAT_types /Volumes/new_drive/lagrangian/julia/.julia_depot/packages/MAT/uRfDC/src/MAT_types.jl:264
+    [7] #structvec##0
+      @ ./none:-1 [inlined]
+    [8] iterate
+      @ ./generator.jl:48 [inlined]
+    [9] collect(itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}})
+      @ Base ./array.jl:790
+   [10] structvec
+      @ /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:6 [inlined]
+   [11] overlap_from_mat(x::MatlabStructArray{2})
+      @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:10
+   [12] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:8 [inlined]
+   [13] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [14] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:6 [inlined]
+   [15] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [16] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:2
+   [17] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:307
+   [18] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4
+   [19] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [20] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4 [inlined]
+   [21] include(mod::Module, _path::String)
+      @ Base ./Base.jl:306
+   [22] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:317
+   [23] _start()
+      @ Base ./client.jl:550
+random_10: Error During Test at /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:5
+  Got exception outside of a @test
+  BoundsError: attempt to access 1×0 Matrix{Any} at index [1]
+  Stacktrace:
+    [1] throw_boundserror(A::Matrix{Any}, I::Tuple{Int64})
+      @ Base ./essentials.jl:15
+    [2] getindex
+      @ ./essentials.jl:919 [inlined]
+    [3] #12
+      @ ./none:-1 [inlined]
+    [4] iterate
+      @ ./generator.jl:48 [inlined]
+    [5] collect(itr::Base.Generator{Vector{Matrix{Any}}, MAT.MAT_types.var"#12#13"{Int64}})
+      @ Base ./array.jl:790
+    [6] getindex(arr::MatlabStructArray{2}, s::Int64)
+      @ MAT.MAT_types /Volumes/new_drive/lagrangian/julia/.julia_depot/packages/MAT/uRfDC/src/MAT_types.jl:264
+    [7] #structvec##0
+      @ ./none:-1 [inlined]
+    [8] iterate
+      @ ./generator.jl:48 [inlined]
+    [9] collect(itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}})
+      @ Base ./array.jl:790
+   [10] structvec
+      @ /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:6 [inlined]
+   [11] overlap_from_mat(x::MatlabStructArray{2})
+      @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:10
+   [12] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:8 [inlined]
+   [13] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [14] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:6 [inlined]
+   [15] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [16] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:2
+   [17] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:307
+   [18] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4
+   [19] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [20] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4 [inlined]
+   [21] include(mod::Module, _path::String)
+      @ Base ./Base.jl:306
+   [22] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:317
+   [23] _start()
+      @ Base ./client.jl:550
+random_12: Error During Test at /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:5
+  Got exception outside of a @test
+  BoundsError: attempt to access 1×0 Matrix{Any} at index [1]
+  Stacktrace:
+    [1] throw_boundserror(A::Matrix{Any}, I::Tuple{Int64})
+      @ Base ./essentials.jl:15
+    [2] getindex
+      @ ./essentials.jl:919 [inlined]
+    [3] #12
+      @ ./none:-1 [inlined]
+    [4] iterate
+      @ ./generator.jl:48 [inlined]
+    [5] collect(itr::Base.Generator{Vector{Matrix{Any}}, MAT.MAT_types.var"#12#13"{Int64}})
+      @ Base ./array.jl:790
+    [6] getindex(arr::MatlabStructArray{2}, s::Int64)
+      @ MAT.MAT_types /Volumes/new_drive/lagrangian/julia/.julia_depot/packages/MAT/uRfDC/src/MAT_types.jl:264
+    [7] #structvec##0
+      @ ./none:-1 [inlined]
+    [8] iterate
+      @ ./generator.jl:48 [inlined]
+    [9] collect(itr::Base.Generator{UnitRange{Int64}, var"#structvec##0#structvec##1"{MatlabStructArray{2}}})
+      @ Base ./array.jl:790
+   [10] structvec
+      @ /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:6 [inlined]
+   [11] overlap_from_mat(x::MatlabStructArray{2})
+      @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:10
+   [12] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:8 [inlined]
+   [13] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [14] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:6 [inlined]
+   [15] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [16] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_3d.jl:2
+   [17] include(mapexpr::Function, mod::Module, _path::String)
+      @ Base ./Base.jl:307
+   [18] top-level scope
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4
+   [19] macro expansion
+      @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+   [20] macro expansion
+      @ /Volumes/new_drive/lagrangian/julia/test/runtests.jl:4 [inlined]
+   [21] include(mod::Module, _path::String)
+      @ Base ./Base.jl:306
+   [22] exec_options(opts::Base.JLOptions)
+      @ Base ./client.jl:317
+   [23] _start()
+      @ Base ./client.jl:550
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 8 == 3
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{4}}, b::Vector{IndexedTrack{4}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:6 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7
+  Expression: partition_equal(actual, expected)
+
+Stacktrace:
+ [1] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [2] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [3] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 10 == 3
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{4}}, b::Vector{IndexedTrack{4}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:6 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7
+  Expression: partition_equal(actual, expected)
+
+Stacktrace:
+ [1] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [2] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [3] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 7 == 3
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{4}}, b::Vector{IndexedTrack{4}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:6 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7
+  Expression: partition_equal(actual, expected)
+
+Stacktrace:
+ [1] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [2] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [3] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 12 == 3
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{4}}, b::Vector{IndexedTrack{4}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:6 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7
+  Expression: partition_equal(actual, expected)
+
+Stacktrace:
+ [1] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [2] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [3] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 5 == 3
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{4}}, b::Vector{IndexedTrack{4}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:6 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7
+  Expression: partition_equal(actual, expected)
+
+Stacktrace:
+ [1] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [2] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [3] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 8 == 3
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{4}}, b::Vector{IndexedTrack{4}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:6 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7
+  Expression: partition_equal(actual, expected)
+
+Stacktrace:
+ [1] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [2] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [3] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 11 == 3
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{4}}, b::Vector{IndexedTrack{4}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:6 [inlined]
+Precompiling packages...
+   2618.2 ms  ✓ MHWTracking
+  1 dependency successfully precompiled in 3 seconds. 93 already precompiled.
+ERROR: LoadError: Some tests did not pass: 230 passed, 27 failed, 9 errored, 0 broken.
+in expression starting at /Volumes/new_drive/lagrangian/julia/test/runtests.jl:3
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7
+  Expression: partition_equal(actual, expected)
+
+Stacktrace:
+ [1] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [2] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [3] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 4 == 3
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{4}}, b::Vector{IndexedTrack{4}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:6 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7
+  Expression: partition_equal(actual, expected)
+
+Stacktrace:
+ [1] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [2] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [3] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:7 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+MATLAB regular 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 8 == 4
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{4}}, b::Vector{IndexedTrack{4}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:2
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:15 [inlined]
+MATLAB LLC 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 6 == 3
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{5}}, b::Vector{IndexedTrack{5}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:24 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:19
+MATLAB LLC 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:25
+  Expression: partition_equal(actual, expected)
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:25 [inlined]
+ [3] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [4] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:19
+MATLAB LLC 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 5 == 3
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{5}}, b::Vector{IndexedTrack{5}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:24 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:19
+MATLAB LLC 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:25
+  Expression: partition_equal(actual, expected)
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:25 [inlined]
+ [3] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [4] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:19
+MATLAB LLC 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+  Expression: length(a) == length(b)
+   Evaluated: 6 == 3
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] test_indexed_exact(a::Vector{IndexedTrack{5}}, b::Vector{IndexedTrack{5}})
+   @ Main /Volumes/new_drive/lagrangian/julia/test/reference_helpers.jl:26
+ [3] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:24 [inlined]
+ [4] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [5] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:19
+MATLAB LLC 4-D exact reference: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:25
+  Expression: partition_equal(actual, expected)
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:25 [inlined]
+ [3] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [4] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_tracking_4d.jl:19
+spn real MATLAB numeric fixtures: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:19
+  Expression: float_match(s[1], (f["snapshots"])[1])
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:19 [inlined]
+ [3] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [4] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:12
+spn real MATLAB numeric fixtures: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:21
+  Expression: float_match(n, reshape(f["normalized"], size(n)))
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:21 [inlined]
+ [3] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [4] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:12
+spn real MATLAB numeric fixtures: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:19
+  Expression: float_match(s[1], (f["snapshots"])[1])
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:19 [inlined]
+ [3] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [4] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:12
+spn real MATLAB numeric fixtures: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:21
+  Expression: float_match(n, reshape(f["normalized"], size(n)))
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:21 [inlined]
+ [3] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [4] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:12
+Test Summary:                                 | Pass  Fail  Error  Total   Time
+MHWTracking                                   |  230    27      9    266  38.4s
+  MATLAB overlap reference                    |   90            9     99   7.1s
+    isolated_continuation                     |    9                   9   3.3s
+    periodic                                  |    9                   9   0.1s
+    split                                     |    9                   9   0.0s
+    merge                                     |                 1      1   1.6s
+    split_merge                               |    9                   9   0.0s
+    two_events                                |                 1      1   0.0s
+    all_active                                |    9                   9   0.0s
+    random_01                                 |    9                   9   0.1s
+    random_02                                 |                 1      1   0.0s
+    random_03                                 |                 1      1   0.0s
+    random_04                                 |    9                   9   0.0s
+    random_05                                 |                 1      1   0.0s
+    random_06                                 |    9                   9   0.0s
+    random_07                                 |                 1      1   0.0s
+    random_08                                 |                 1      1   0.0s
+    random_09                                 |    9                   9   0.0s
+    random_10                                 |                 1      1   0.0s
+    random_11                                 |    9                   9   0.0s
+    random_12                                 |                 1      1   0.0s
+  3-D boundaries and method distinction       |   12                  12   3.2s
+  MATLAB regular 4-D exact reference          |   41    17            58   3.9s
+  MATLAB LLC 4-D exact reference              |   42     6            48   0.9s
+  4-D edge and filtering rules                |   14                  14   1.1s
+  Neighborhood and smoothing MATLAB reference |    5                   5   1.1s
+  spn real MATLAB numeric fixtures            |    6     4            10  15.4s
+  Portable exact LLC seam cases               |   20                  20   0.4s
+RNG of the outermost testset: Xoshiro(0x3981b8d8a1749df2, 0x8a701e8cd618f5ca, 0x2e9af2f81d11f8f3, 0x5f2be862c37ef883, 0x5c0c2e0b0d9227a4)

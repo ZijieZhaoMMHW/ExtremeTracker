@@ -1,0 +1,6 @@
+                   method: 'exact_shared_XC_YC_bounds'
+                grid_size: [90 90 13]
+      n_shared_cell_edges: 2312
+             n_seam_edges: 2312
+    seam_tile_pair_counts: [25x3 table]
+

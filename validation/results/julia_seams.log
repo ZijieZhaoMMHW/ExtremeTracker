@@ -1,0 +1,7 @@
+same passed for 2312 edges
+forwardDiagonal passed for 2312 edges
+reverseDiagonal passed for 2312 edges
+depthGapTwo passed for 2312 edges
+timeGapTwo passed for 2312 edges
+Test Summary:                    | Pass  Total  Time
+All 2312 actual LLC90 seam edges | 1450   1450  1.4s

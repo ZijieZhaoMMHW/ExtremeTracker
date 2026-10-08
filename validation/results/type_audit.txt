@@ -1,0 +1,22 @@
+Path references updated after relocation to /Volumes/new_drive/lagrangian/julia; numerical output retained from the original diagnostic.
+Precompiling packages...
+   1894.0 ms  ✓ MHWTracking
+  1 dependency successfully precompiled in 2 seconds. 93 already precompiled.
+MethodInstance for MHWTracking.components(::SubArray{Float64, 2, Array{Float64, 3}, Tuple{Base.Slice{Base.OneTo{Int64}}, Base.Slice{Base.OneTo{Int64}}, Int64}, true})
+  from components(mask::AbstractArray{T, N}; periodic, connectivity) where {T, N} @ MHWTracking /Volumes/new_drive/lagrangian/julia/src/connectivity.jl:54
+Static Parameters
+  T = Float64
+  N = 2
+Arguments
+  #self#::Core.Const(MHWTracking.components)
+  mask::SubArray{Float64, 2, Array{Float64, 3}, Tuple{Base.Slice{Base.OneTo{Int64}}, Base.Slice{Base.OneTo{Int64}}, Int64}, true}
+Body::ConnectedComponents{2}
+1 ─ %1 = MHWTracking.:(var"#components#22")::Core.Const(MHWTracking.var"#components#22")
+│   %2 = MHWTracking.:-::Core.Const(-)
+│   %3 = MHWTracking.:^::Core.Const(^)
+│   %4 = $(Expr(:static_parameter, 2))::Core.Const(2)
+│   %5 = (%3)(3, %4)::Core.Const(9)
+│   %6 = (%2)(%5, 1)::Core.Const(8)
+│   %7 = (%1)(false, %6, #self#, mask)::ConnectedComponents{2}
+└──      return %7
+

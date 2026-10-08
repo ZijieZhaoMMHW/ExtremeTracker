@@ -1,0 +1,51 @@
+[
+  {
+    "notebook": "01_tracking_concepts.ipynb",
+    "code_cells": 5,
+    "png_outputs": 2,
+    "errors": 0,
+    "seconds": 59.23
+  },
+  {
+    "notebook": "02_real_3d.ipynb",
+    "code_cells": 7,
+    "png_outputs": 3,
+    "errors": 0,
+    "seconds": 44.2
+  },
+  {
+    "notebook": "03_regular_4d.ipynb",
+    "code_cells": 4,
+    "png_outputs": 2,
+    "errors": 0,
+    "seconds": 30.54
+  },
+  {
+    "notebook": "04_llc_seams.ipynb",
+    "code_cells": 6,
+    "png_outputs": 3,
+    "errors": 0,
+    "seconds": 27.52
+  },
+  {
+    "notebook": "05_auxiliary_spn.ipynb",
+    "code_cells": 5,
+    "png_outputs": 3,
+    "errors": 0,
+    "seconds": 40.4
+  },
+  {
+    "notebook": "06_validation_performance.ipynb",
+    "code_cells": 4,
+    "png_outputs": 3,
+    "errors": 0,
+    "seconds": 32.34
+  },
+  {
+    "notebook": "07_tasman_sea_spn.ipynb",
+    "code_cells": 9,
+    "png_outputs": 5,
+    "errors": 0,
+    "seconds": 113.9
+  }
+]

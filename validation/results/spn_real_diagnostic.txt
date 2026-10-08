@@ -1,0 +1,11 @@
+Precompiling packages...
+    924.0 ms  ✓ MHWTracking
+  1 dependency successfully precompiled in 1 seconds. 93 already precompiled.
+flag=0 event=1 NaN mismatches=0 zero mismatches=0 max finite error=1.3322676295501878e-15
+flag=0 event=2 NaN mismatches=0 zero mismatches=0 max finite error=1.1102230246251565e-15
+flag=0 event=3 NaN mismatches=0 zero mismatches=0 max finite error=1.5543122344752192e-15
+flag=1 event=1 NaN mismatches=0 zero mismatches=0 max finite error=1.3322676295501878e-15
+flag=1 event=2 NaN mismatches=0 zero mismatches=0 max finite error=1.1102230246251565e-15
+flag=1 event=3 NaN mismatches=0 zero mismatches=0 max finite error=7.105427357601002e-15
+Test Summary:                       | Pass  Total   Time
+Actual field spn MATLAB equivalence |    8      8  12.7s

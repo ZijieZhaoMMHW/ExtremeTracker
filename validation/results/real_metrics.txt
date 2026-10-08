@@ -1,0 +1,11 @@
+active = 1823266
+allocated_bytes = 3207025184
+event_partition_equal = true
+julia_version = 1.12.3
+matlab_seconds = 1076.095594709
+nums = 4
+seconds = 3.121914208
+shape = [400, 160, 731]
+strict_fields_equal = true
+tracks_julia = 4277
+tracks_matlab = 4277

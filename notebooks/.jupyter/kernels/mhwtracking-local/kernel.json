@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/zijiezhao/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/bin/julia",
+    "-i",
+    "--startup-file=no",
+    "--project=/Volumes/new_drive/lagrangian/julia/notebooks",
+    "-e",
+    "import IJulia; IJulia.run_kernel()",
+    "{connection_file}"
+  ],
+  "display_name": "MHWTracking Julia (local)",
+  "language": "julia",
+  "env": {}
+}

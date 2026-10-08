@@ -1,0 +1,303 @@
+Path references updated after relocation to /Volumes/new_drive/lagrangian/julia; numerical output retained from the original diagnostic.
+MethodInstance for MHWTracking.var"#components#22"(::Bool, ::Int64, ::typeof(MHWTracking.components), ::SubArray{Float64, 2, Array{Float64, 3}, Tuple{Base.Slice{Base.OneTo{Int64}}, Base.Slice{Base.OneTo{Int64}}, Int64}, true})
+  from var"#components#22"(periodic, connectivity, ::typeof(MHWTracking.components), mask::AbstractArray{T, N}) where {T, N} @ MHWTracking /Volumes/new_drive/lagrangian/julia/src/connectivity.jl:54
+Static Parameters
+  T = Float64
+  N = 2
+Arguments
+  #components#22::Core.Const(MHWTracking.var"#components#22")
+  periodic::Bool
+  connectivity::Int64
+  @_4::Core.Const(MHWTracking.components)
+  mask::SubArray{Float64, 2, Array{Float64, 3}, Tuple{Base.Slice{Base.OneTo{Int64}}, Base.Slice{Base.OneTo{Int64}}, Int64}, true}
+Locals
+  @_6::UNION{NOTHING, TUPLE{INT64, INT64}}
+  #25::MHWTracking.var"#32#33"
+  #24::MHWTracking.var"#30#31"{2, Int64}
+  #23::MHWTracking.var"#28#29"
+  parts::Vector{Vector{Int64}}
+  seen::BitMatrix
+  offsets::Vector{Tuple{Int64, Int64}}
+  li::LinearIndices{2, Tuple{Base.OneTo{Int64}, Base.OneTo{Int64}}}
+  ci::CartesianIndices{2, Tuple{Base.OneTo{Int64}, Base.OneTo{Int64}}}
+  dims::Tuple{Int64, Int64}
+  seed::Int64
+  head::Int64
+  queue::Vector{Int64}
+  @_19::UNION{NOTHING, TUPLE{TUPLE{INT64, INT64}, INT64}}
+  coord::Tuple{Int64, Int64}
+  p::Int64
+  #27::MHWTracking.var"#36#37"{Tuple{Int64, Int64}}
+  #26::MHWTracking.var"#34#35"{Tuple{Int64, Int64}, Tuple{Int64, Int64}}
+  off::Tuple{Int64, Int64}
+  ix::ANY
+  q@_26::CORE.BOX
+  q@_27::Union{}
+  q@_28::Union{}
+  q@_29::Union{}
+  q@_30::Union{}
+Body::ConnectedComponents{2}
+1 ──        nothing
+│           Core.NewvarNode(:(@_6))
+│           Core.NewvarNode(:(#25))
+│           Core.NewvarNode(:(#24))
+│           Core.NewvarNode(:(#23))
+│           Core.NewvarNode(:(parts))
+│           Core.NewvarNode(:(seen))
+│           Core.NewvarNode(:(offsets))
+│           Core.NewvarNode(:(li))
+│           Core.NewvarNode(:(ci))
+│           Core.NewvarNode(:(dims))
+│    %12  = MHWTracking.in::Core.Const(in)
+│    %13  = MHWTracking.:*::Core.Const(*)
+│    %14  = $(Expr(:static_parameter, 2))::Core.Const(2)
+│    %15  = (%13)(2, %14)::Core.Const(4)
+│    %16  = MHWTracking.:-::Core.Const(-)
+│    %17  = MHWTracking.:^::Core.Const(^)
+│    %18  = $(Expr(:static_parameter, 2))::Core.Const(2)
+│    %19  = (%17)(3, %18)::Core.Const(9)
+│    %20  = (%16)(%19, 1)::Core.Const(8)
+│    %21  = Core.tuple(%15, %20)::Core.Const((4, 8))
+│    %22  = (%12)(connectivity, %21)::Bool
+└───        goto #3 if not %22
+2 ──        goto #4
+3 ── %25  = MHWTracking.throw::Core.Const(throw)
+│    %26  = MHWTracking.ArgumentError::Core.Const(ArgumentError)
+│    %27  = MHWTracking.:*::Core.Const(*)
+│    %28  = $(Expr(:static_parameter, 2))::Core.Const(2)
+│    %29  = (%27)(2, %28)::Core.Const(4)
+│    %30  = MHWTracking.:-::Core.Const(-)
+│    %31  = MHWTracking.:^::Core.Const(^)
+│    %32  = $(Expr(:static_parameter, 2))::Core.Const(2)
+│    %33  = (%31)(3, %32)::Core.Const(9)
+│    %34  = (%30)(%33, 1)::Core.Const(8)
+│    %35  = Base.string("use axial ", %29, " or full ", %34, " connectivity")::String
+│    %36  = (%26)(%35)::Core.PartialStruct(ArgumentError, Any[String])
+└───        (%25)(%36)
+4 ┄─ %38  = MHWTracking.size::Core.Const(size)
+│           (dims = (%38)(mask))
+│    %40  = MHWTracking.CartesianIndices::Core.Const(CartesianIndices)
+│           (ci = (%40)(mask))
+│    %42  = MHWTracking.LinearIndices::Core.Const(LinearIndices)
+│           (li = (%42)(mask))
+│    %44  = MHWTracking.:(var"#28#29")::Core.Const(MHWTracking.var"#28#29")
+│           (#23 = %new(%44))
+│    %46  = #23::Core.Const(MHWTracking.var"#28#29"())
+│    %47  = MHWTracking.:(var"#30#31")::Core.Const(MHWTracking.var"#30#31")
+│    %48  = $(Expr(:static_parameter, 2))::Core.Const(2)
+│    %49  = Core._typeof_captured_variable(connectivity)::Core.Const(Int64)
+│    %50  = Core.apply_type(%47, %48, %49)::Core.Const(MHWTracking.var"#30#31"{2, Int64})
+│           (#24 = %new(%50, connectivity))
+│    %52  = #24::MHWTracking.var"#30#31"{2, Int64}
+│    %53  = MHWTracking.CartesianIndices::Core.Const(CartesianIndices)
+│    %54  = MHWTracking.ntuple::Core.Const(ntuple)
+│    %55  = MHWTracking.:(var"#32#33")::Core.Const(MHWTracking.var"#32#33")
+│           (#25 = %new(%55))
+│    %57  = #25::Core.Const(MHWTracking.var"#32#33"())
+│    %58  = $(Expr(:static_parameter, 2))::Core.Const(2)
+│    %59  = (%54)(%57, %58)::Core.Const((-1:1, -1:1))
+│    %60  = (%53)(%59)::Core.Const(CartesianIndices((-1:1, -1:1)))
+│    %61  = Base.Filter(%52, %60)::Core.PartialStruct(Base.Iterators.Filter{MHWTracking.var"#30#31"{2, Int64}, CartesianIndices{2, Tuple{UnitRange{Int64}, UnitRange{Int64}}}}, Any[MHWTracking.var"#30#31"{2, Int64}, Core.Const(CartesianIndices((-1:1, -1:1)))])
+│    %62  = Base.Generator(%46, %61)::Core.PartialStruct(Base.Generator{Base.Iterators.Filter{MHWTracking.var"#30#31"{2, Int64}, CartesianIndices{2, Tuple{UnitRange{Int64}, UnitRange{Int64}}}}, MHWTracking.var"#28#29"}, Any[Core.Const(MHWTracking.var"#28#29"()), Core.PartialStruct(Base.Iterators.Filter{MHWTracking.var"#30#31"{2, Int64}, CartesianIndices{2, Tuple{UnitRange{Int64}, UnitRange{Int64}}}}, Any[MHWTracking.var"#30#31"{2, Int64}, Core.Const(CartesianIndices((-1:1, -1:1)))])])
+│           (offsets = Base.collect(%62))
+│    %64  = MHWTracking.falses::Core.Const(falses)
+│    %65  = dims::Tuple{Int64, Int64}
+│           (seen = (%64)(%65))
+│    %67  = MHWTracking.Vector::Core.Const(Vector)
+│    %68  = MHWTracking.Vector::Core.Const(Vector)
+│    %69  = MHWTracking.Int::Core.Const(Int64)
+│    %70  = Core.apply_type(%68, %69)::Core.Const(Vector{Int64})
+│    %71  = Core.apply_type(%67, %70)::Core.Const(Vector{Vector{Int64}})
+│           (parts = (%71)())
+│    %73  = MHWTracking.eachindex::Core.Const(eachindex)
+│    %74  = seen::BitMatrix
+│    %75  = (%73)(%74)::Base.OneTo{Int64}
+│           (@_6 = Base.iterate(%75))
+│    %77  = @_6::UNION{NOTHING, TUPLE{INT64, INT64}}
+│    %78  = (%77 === nothing)::Bool
+│    %79  = Base.not_int(%78)::Bool
+└───        goto #39 if not %79
+5 ┄─        Core.NewvarNode(:(head))
+│           Core.NewvarNode(:(queue))
+│    %83  = @_6::Tuple{Int64, Int64}
+│           (seed = Core.getfield(%83, 1))
+│    %85  = Core.getfield(%83, 2)::Int64
+│    %86  = seen::BitMatrix
+│    %87  = seed::Int64
+│    %88  = Base.getindex(%86, %87)::Bool
+└───        goto #7 if not %88
+6 ──        goto #8
+7 ── %91  = MHWTracking.:!::Core.Const(!)
+│    %92  = MHWTracking.active::Core.Const(MHWTracking.active)
+│    %93  = seed::Int64
+│    %94  = Base.getindex(mask, %93)::Float64
+│    %95  = (%92)(%94)::Bool
+│    %96  = (%91)(%95)::Bool
+└───        goto #10 if not %96
+8 ┄─        goto #37
+9 ──        Core.Const(:(goto %100))
+10 ┄ %100 = true::Core.Const(true)
+│    %101 = seen::BitMatrix
+│    %102 = seed::Int64
+│           Base.setindex!(%101, %100, %102)
+│    %104 = MHWTracking.Int::Core.Const(Int64)
+│    %105 = seed::Int64
+│           (queue = Base.getindex(%104, %105))
+└───        (head = 1)
+11 ┄ %108 = MHWTracking.:<=::Core.Const(<=)
+│    %109 = head::Int64
+│    %110 = MHWTracking.length::Core.Const(length)
+│    %111 = queue::Vector{Int64}
+│    %112 = (%110)(%111)::Int64
+│    %113 = (%108)(%109, %112)::Bool
+└───        goto #36 if not %113
+12 ─ %115 = queue::Vector{Int64}
+│    %116 = head::Int64
+│           (p = Base.getindex(%115, %116))
+│    %118 = MHWTracking.:+::Core.Const(+)
+│    %119 = head::Int64
+│           (head = (%118)(%119, 1))
+│    %121 = MHWTracking.Tuple::Core.Const(Tuple)
+│    %122 = ci::CartesianIndices{2, Tuple{Base.OneTo{Int64}, Base.OneTo{Int64}}}
+│    %123 = p::Int64
+│    %124 = Base.getindex(%122, %123)::CartesianIndex{2}
+│           (coord = (%121)(%124))
+│    %126 = offsets::Vector{Tuple{Int64, Int64}}
+│           (@_19 = Base.iterate(%126))
+│    %128 = @_19::UNION{NOTHING, TUPLE{TUPLE{INT64, INT64}, INT64}}
+│    %129 = (%128 === nothing)::Bool
+│    %130 = Base.not_int(%129)::Bool
+└───        goto #35 if not %130
+13 ┄        Core.NewvarNode(:(#27))
+│           Core.NewvarNode(:(ix))
+│           (q@_26 = Core.Box())
+│    %135 = @_19::Tuple{Tuple{Int64, Int64}, Int64}
+│           (off = Core.getfield(%135, 1))
+│    %137 = Core.getfield(%135, 2)::Int64
+│    %138 = MHWTracking.ntuple::Core.Const(ntuple)
+│    %139 = MHWTracking.:(var"#34#35")::Core.Const(MHWTracking.var"#34#35")
+│    %140 = coord::Tuple{Int64, Int64}
+│    %141 = Core._typeof_captured_variable(%140)::Core.Const(Tuple{Int64, Int64})
+│    %142 = off::Tuple{Int64, Int64}
+│    %143 = Core._typeof_captured_variable(%142)::Core.Const(Tuple{Int64, Int64})
+│    %144 = Core.apply_type(%139, %141, %143)::Core.Const(MHWTracking.var"#34#35"{Tuple{Int64, Int64}, Tuple{Int64, Int64}})
+│    %145 = coord::Tuple{Int64, Int64}
+│    %146 = off::Tuple{Int64, Int64}
+│           (#26 = %new(%144, %145, %146))
+│    %148 = #26::MHWTracking.var"#34#35"{Tuple{Int64, Int64}, Tuple{Int64, Int64}}
+│    %149 = $(Expr(:static_parameter, 2))::Core.Const(2)
+│    %150 = (%138)(%148, %149)::Tuple{Int64, Int64}
+│    %151 = q@_26::CORE.BOX
+│           Core.setfield!(%151, :contents, %150)
+└───        goto #24 if not periodic
+14 ─ %154 = MHWTracking.mod1::Core.Const(mod1)
+│    %155 = q@_26::CORE.BOX
+│    %156 = Core.isdefined(%155, :contents)::Bool
+└───        goto #16 if not %156
+15 ─        goto #17
+16 ─        Core.NewvarNode(:(q@_27))
+└───        q@_27
+17 ┄ %161 = q@_26::Core.PartialStruct(Core.Box, Any[Any])
+│    %162 = Core.getfield(%161, :contents)::ANY
+│    %163 = Base.getindex(%162, 1)::ANY
+│    %164 = dims::Tuple{Int64, Int64}
+│    %165 = Base.getindex(%164, 1)::Int64
+│    %166 = (%154)(%163, %165)::ANY
+│    %167 = Core.tuple(%166)::TUPLE{ANY}
+│    %168 = q@_26::Core.PartialStruct(Core.Box, Any[Any])
+│    %169 = Core.isdefined(%168, :contents)::Core.Const(true)
+└───        goto #19 if not %169
+18 ─        goto #20
+19 ─        Core.Const(Core.NewvarNode(:(q@_28)))
+└───        Core.Const(:(q@_28))
+20 ┄ %174 = q@_26::Core.PartialStruct(Core.Box, Any[Any])
+│    %175 = Core.getfield(%174, :contents)::ANY
+│    %176 = MHWTracking.:(:)::Core.Const(Colon())
+│    %177 = q@_26::Core.PartialStruct(Core.Box, Any[Any])
+│    %178 = Core.isdefined(%177, :contents)::Core.Const(true)
+└───        goto #22 if not %178
+21 ─        goto #23
+22 ─        Core.Const(Core.NewvarNode(:(q@_29)))
+└───        Core.Const(:(q@_29))
+23 ┄ %183 = q@_26::Core.PartialStruct(Core.Box, Any[Any])
+│    %184 = Core.getfield(%183, :contents)::ANY
+│    %185 = Base.lastindex(%184)::ANY
+│    %186 = (%176)(2, %185)::ANY
+│    %187 = Base.getindex(%175, %186)::ANY
+│    %188 = Core._apply_iterate(Base.iterate, Core.tuple, %167, %187)::TUPLE{ANY, VARARG{ANY}}
+│    %189 = q@_26::Core.PartialStruct(Core.Box, Any[Any])
+└───        Core.setfield!(%189, :contents, %188)
+24 ┄ %191 = MHWTracking.all::Core.Const(all)
+│    %192 = MHWTracking.:(var"#36#37")::Core.Const(MHWTracking.var"#36#37")
+│    %193 = dims::Tuple{Int64, Int64}
+│    %194 = Core._typeof_captured_variable(%193)::Core.Const(Tuple{Int64, Int64})
+│    %195 = Core.apply_type(%192, %194)::Core.Const(MHWTracking.var"#36#37"{Tuple{Int64, Int64}})
+│    %196 = dims::Tuple{Int64, Int64}
+│    %197 = q@_26::CORE.BOX
+│           (#27 = %new(%195, %196, %197))
+│    %199 = #27::MHWTracking.var"#36#37"{Tuple{Int64, Int64}}
+│    %200 = MHWTracking.:(:)::Core.Const(Colon())
+│    %201 = $(Expr(:static_parameter, 2))::Core.Const(2)
+│    %202 = (%200)(1, %201)::Core.Const(1:2)
+│    %203 = (%191)(%199, %202)::UNION{MISSING, BOOL}
+└───        goto #26 if not %203
+25 ─        goto #27
+26 ─        goto #33
+27 ─ %207 = q@_26::CORE.BOX
+│    %208 = Core.isdefined(%207, :contents)::Bool
+└───        goto #29 if not %208
+28 ─        goto #30
+29 ─        Core.NewvarNode(:(q@_30))
+└───        q@_30
+30 ┄ %213 = q@_26::Core.PartialStruct(Core.Box, Any[Any])
+│    %214 = Core.getfield(%213, :contents)::ANY
+│    %215 = li::LinearIndices{2, Tuple{Base.OneTo{Int64}, Base.OneTo{Int64}}}
+│    %216 = Core.tuple(%215)::Tuple{LinearIndices{2, Tuple{Base.OneTo{Int64}, Base.OneTo{Int64}}}}
+│           (ix = Core._apply_iterate(Base.iterate, Base.getindex, %216, %214))
+│    %218 = MHWTracking.:!::Core.Const(!)
+│    %219 = seen::BitMatrix
+│    %220 = ix::ANY
+│    %221 = Base.getindex(%219, %220)::ANY
+│    %222 = (%218)(%221)::ANY
+└───        goto #33 if not %222
+31 ─ %224 = MHWTracking.active::Core.Const(MHWTracking.active)
+│    %225 = ix::ANY
+│    %226 = Base.getindex(mask, %225)::ANY
+│    %227 = (%224)(%226)::ANY
+└───        goto #33 if not %227
+32 ─ %229 = true::Core.Const(true)
+│    %230 = seen::BitMatrix
+│    %231 = ix::ANY
+│           Base.setindex!(%230, %229, %231)
+│    %233 = MHWTracking.push!::Core.Const(push!)
+│    %234 = queue::Vector{Int64}
+│    %235 = ix::ANY
+└───        (%233)(%234, %235)
+33 ┄        (@_19 = Base.iterate(%126, %137))
+│    %238 = @_19::UNION{NOTHING, TUPLE{TUPLE{INT64, INT64}, INT64}}
+│    %239 = (%238 === nothing)::Bool
+│    %240 = Base.not_int(%239)::Bool
+└───        goto #35 if not %240
+34 ─        goto #13
+35 ┄        goto #11
+36 ─ %244 = MHWTracking.push!::Core.Const(push!)
+│    %245 = parts::Vector{Vector{Int64}}
+│    %246 = MHWTracking.sort!::Core.Const(sort!)
+│    %247 = queue::Vector{Int64}
+│    %248 = (%246)(%247)::Vector{Int64}
+└───        (%244)(%245, %248)
+37 ┄        (@_6 = Base.iterate(%75, %85))
+│    %251 = @_6::UNION{NOTHING, TUPLE{INT64, INT64}}
+│    %252 = (%251 === nothing)::Bool
+│    %253 = Base.not_int(%252)::Bool
+└───        goto #39 if not %253
+38 ─        goto #5
+39 ┄ %256 = MHWTracking.ConnectedComponents::Core.Const(ConnectedComponents)
+│    %257 = dims::Tuple{Int64, Int64}
+│    %258 = MHWTracking.length::Core.Const(length)
+│    %259 = parts::Vector{Vector{Int64}}
+│    %260 = (%258)(%259)::Int64
+│    %261 = parts::Vector{Vector{Int64}}
+│    %262 = (%256)(connectivity, %257, %260, %261)::ConnectedComponents{2}
+└───        return %262
+

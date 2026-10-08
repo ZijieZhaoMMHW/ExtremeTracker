@@ -1,0 +1,4 @@
+edges = 2312
+cases = 5
+isolated_pairs = 11560
+seconds = 0.8716189861297607

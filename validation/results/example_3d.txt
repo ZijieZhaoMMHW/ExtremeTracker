@@ -1,0 +1,2 @@
+Overlap events: 4277
+First event: days 1–5; occupied days=5

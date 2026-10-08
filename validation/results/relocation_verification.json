@@ -1,0 +1,19 @@
+{
+  "package_root": "/Volumes/new_drive/lagrangian/julia",
+  "date": "2026-10-08",
+  "copied_files_and_links_sha256_verified": 8570,
+  "original_input_files_unchanged": 10,
+  "archived_source_and_fixture_checksums_verified": 24,
+  "package_tests_passed": true,
+  "default_path_real_data_example_passed": true,
+  "notebooks_executed": 6,
+  "notebook_code_cells_executed": 31,
+  "embedded_png_outputs": 16,
+  "notebook_errors": 0,
+  "stale_project_path_references": [],
+  "cleanup_complete": true,
+  "package_test_assertions_passed": 666,
+  "real_3d_tracking_seconds": 3.09844925,
+  "compatibility_symlink_created": false,
+  "previous_workspace_contains_only_relocation_notice": true
+}

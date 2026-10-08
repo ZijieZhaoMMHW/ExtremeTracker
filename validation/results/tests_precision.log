@@ -1,0 +1,42 @@
+Path references updated after relocation to /Volumes/new_drive/lagrangian/julia; numerical output retained from the original diagnostic.
+Precompiling packages...
+   2487.2 ms  ✓ MHWTracking
+  1 dependency successfully precompiled in 3 seconds. 93 already precompiled.
+ERROR: LoadError: Some tests did not pass: 644 passed, 2 failed, 0 errored, 0 broken.
+in expression starting at /Volumes/new_drive/lagrangian/julia/test/runtests.jl:3
+spn real MATLAB numeric fixtures: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:21
+  Expression: float_match(n, reshape(f["normalized"], size(n)))
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:21 [inlined]
+ [3] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [4] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:12
+spn real MATLAB numeric fixtures: Test Failed at /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:21
+  Expression: float_match(n, reshape(f["normalized"], size(n)))
+
+Stacktrace:
+ [1] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:680 [inlined]
+ [2] macro expansion
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:21 [inlined]
+ [3] macro expansion
+   @ ~/.julia/juliaup/julia-1.12.3+0.aarch64.apple.darwin14/share/julia/stdlib/v1.12/Test/src/Test.jl:1776 [inlined]
+ [4] top-level scope
+   @ /Volumes/new_drive/lagrangian/julia/test/test_auxiliary.jl:12
+Test Summary:                                 | Pass  Fail  Total   Time
+MHWTracking                                   |  644     2    646  40.7s
+  MATLAB overlap reference                    |  150          150   5.4s
+  3-D boundaries and method distinction       |   12           12   2.8s
+  MATLAB regular 4-D exact reference          |  277          277   2.4s
+  MATLAB LLC 4-D exact reference              |   99           99   1.1s
+  4-D edge and filtering rules                |   14           14   0.9s
+  Neighborhood and smoothing MATLAB reference |    5            5   1.0s
+  spn real MATLAB numeric fixtures            |    8     2     10  18.2s
+  Portable exact LLC seam cases               |   20           20   0.4s
+  Actual LLC90 topology and grid              |   59           59   2.9s
+RNG of the outermost testset: Xoshiro(0x4e47a35c0d674f6f, 0x52e6c56c3d075751, 0xc7afe812c9705f04, 0x61e491ee56f5678d, 0xdaab798314650551)

@@ -1,0 +1,10529 @@
+                   size: [400 160 731]
+                  class: 'double'
+              nan_count: 44960259
+           active_count: 46784000
+           finite_count: 1823741
+              lon_range: [80.1250 179.8750]
+              lat_range: [-59.8750 -20.1250]
+                   nums: 4
+            binary_rule: 'positive'
+    binary_active_count: 1823266
+
+     1
+
+     2
+
+     3
+
+     4
+
+     5
+
+     6
+
+     7
+
+     8
+
+     9
+
+    10
+
+    11
+
+    12
+
+    13
+
+    14
+
+    15
+
+    16
+
+    17
+
+    18
+
+    19
+
+    20
+
+    21
+
+    22
+
+    23
+
+    24
+
+    25
+
+    26
+
+    27
+
+    28
+
+    29
+
+    30
+
+    31
+
+    32
+
+    33
+
+    34
+
+    35
+
+    36
+
+    37
+
+    38
+
+    39
+
+    40
+
+    41
+
+    42
+
+    43
+
+    44
+
+    45
+
+    46
+
+    47
+
+    48
+
+    49
+
+    50
+
+    51
+
+    52
+
+    53
+
+    54
+
+    55
+
+    56
+
+    57
+
+    58
+
+    59
+
+    60
+
+    61
+
+    62
+
+    63
+
+    64
+
+    65
+
+    66
+
+    67
+
+    68
+
+    69
+
+    70
+
+    71
+
+    72
+
+    73
+
+    74
+
+    75
+
+    76
+
+    77
+
+    78
+
+    79
+
+    80
+
+    81
+
+    82
+
+    83
+
+    84
+
+    85
+
+    86
+
+    87
+
+    88
+
+    89
+
+    90
+
+    91
+
+    92
+
+    93
+
+    94
+
+    95
+
+    96
+
+    97
+
+    98
+
+    99
+
+   100
+
+   101
+
+   102
+
+   103
+
+   104
+
+   105
+
+   106
+
+   107
+
+   108
+
+   109
+
+   110
+
+   111
+
+   112
+
+   113
+
+   114
+
+   115
+
+   116
+
+   117
+
+   118
+
+   119
+
+   120
+
+   121
+
+   122
+
+   123
+
+   124
+
+   125
+
+   126
+
+   127
+
+   128
+
+   129
+
+   130
+
+   131
+
+   132
+
+   133
+
+   134
+
+   135
+
+   136
+
+   137
+
+   138
+
+   139
+
+   140
+
+   141
+
+   142
+
+   143
+
+   144
+
+   145
+
+   146
+
+   147
+
+   148
+
+   149
+
+   150
+
+   151
+
+   152
+
+   153
+
+   154
+
+   155
+
+   156
+
+   157
+
+   158
+
+   159
+
+   160
+
+   161
+
+   162
+
+   163
+
+   164
+
+   165
+
+   166
+
+   167
+
+   168
+
+   169
+
+   170
+
+   171
+
+   172
+
+   173
+
+   174
+
+   175
+
+   176
+
+   177
+
+   178
+
+   179
+
+   180
+
+   181
+
+   182
+
+   183
+
+   184
+
+   185
+
+   186
+
+   187
+
+   188
+
+   189
+
+   190
+
+   191
+
+   192
+
+   193
+
+   194
+
+   195
+
+   196
+
+   197
+
+   198
+
+   199
+
+   200
+
+   201
+
+   202
+
+   203
+
+   204
+
+   205
+
+   206
+
+   207
+
+   208
+
+   209
+
+   210
+
+   211
+
+   212
+
+   213
+
+   214
+
+   215
+
+   216
+
+   217
+
+   218
+
+   219
+
+   220
+
+   221
+
+   222
+
+   223
+
+   224
+
+   225
+
+   226
+
+   227
+
+   228
+
+   229
+
+   230
+
+   231
+
+   232
+
+   233
+
+   234
+
+   235
+
+   236
+
+   237
+
+   238
+
+   239
+
+   240
+
+   241
+
+   242
+
+   243
+
+   244
+
+   245
+
+   246
+
+   247
+
+   248
+
+   249
+
+   250
+
+   251
+
+   252
+
+   253
+
+   254
+
+   255
+
+   256
+
+   257
+
+   258
+
+   259
+
+   260
+
+   261
+
+   262
+
+   263
+
+   264
+
+   265
+
+   266
+
+   267
+
+   268
+
+   269
+
+   270
+
+   271
+
+   272
+
+   273
+
+   274
+
+   275
+
+   276
+
+   277
+
+   278
+
+   279
+
+   280
+
+   281
+
+   282
+
+   283
+
+   284
+
+   285
+
+   286
+
+   287
+
+   288
+
+   289
+
+   290
+
+   291
+
+   292
+
+   293
+
+   294
+
+   295
+
+   296
+
+   297
+
+   298
+
+   299
+
+   300
+
+   301
+
+   302
+
+   303
+
+   304
+
+   305
+
+   306
+
+   307
+
+   308
+
+   309
+
+   310
+
+   311
+
+   312
+
+   313
+
+   314
+
+   315
+
+   316
+
+   317
+
+   318
+
+   319
+
+   320
+
+   321
+
+   322
+
+   323
+
+   324
+
+   325
+
+   326
+
+   327
+
+   328
+
+   329
+
+   330
+
+   331
+
+   332
+
+   333
+
+   334
+
+   335
+
+   336
+
+   337
+
+   338
+
+   339
+
+   340
+
+   341
+
+   342
+
+   343
+
+   344
+
+   345
+
+   346
+
+   347
+
+   348
+
+   349
+
+   350
+
+   351
+
+   352
+
+   353
+
+   354
+
+   355
+
+   356
+
+   357
+
+   358
+
+   359
+
+   360
+
+   361
+
+   362
+
+   363
+
+   364
+
+   365
+
+   366
+
+   367
+
+   368
+
+   369
+
+   370
+
+   371
+
+   372
+
+   373
+
+   374
+
+   375
+
+   376
+
+   377
+
+   378
+
+   379
+
+   380
+
+   381
+
+   382
+
+   383
+
+   384
+
+   385
+
+   386
+
+   387
+
+   388
+
+   389
+
+   390
+
+   391
+
+   392
+
+   393
+
+   394
+
+   395
+
+   396
+
+   397
+
+   398
+
+   399
+
+   400
+
+   401
+
+   402
+
+   403
+
+   404
+
+   405
+
+   406
+
+   407
+
+   408
+
+   409
+
+   410
+
+   411
+
+   412
+
+   413
+
+   414
+
+   415
+
+   416
+
+   417
+
+   418
+
+   419
+
+   420
+
+   421
+
+   422
+
+   423
+
+   424
+
+   425
+
+   426
+
+   427
+
+   428
+
+   429
+
+   430
+
+   431
+
+   432
+
+   433
+
+   434
+
+   435
+
+   436
+
+   437
+
+   438
+
+   439
+
+   440
+
+   441
+
+   442
+
+   443
+
+   444
+
+   445
+
+   446
+
+   447
+
+   448
+
+   449
+
+   450
+
+   451
+
+   452
+
+   453
+
+   454
+
+   455
+
+   456
+
+   457
+
+   458
+
+   459
+
+   460
+
+   461
+
+   462
+
+   463
+
+   464
+
+   465
+
+   466
+
+   467
+
+   468
+
+   469
+
+   470
+
+   471
+
+   472
+
+   473
+
+   474
+
+   475
+
+   476
+
+   477
+
+   478
+
+   479
+
+   480
+
+   481
+
+   482
+
+   483
+
+   484
+
+   485
+
+   486
+
+   487
+
+   488
+
+   489
+
+   490
+
+   491
+
+   492
+
+   493
+
+   494
+
+   495
+
+   496
+
+   497
+
+   498
+
+   499
+
+   500
+
+   501
+
+   502
+
+   503
+
+   504
+
+   505
+
+   506
+
+   507
+
+   508
+
+   509
+
+   510
+
+   511
+
+   512
+
+   513
+
+   514
+
+   515
+
+   516
+
+   517
+
+   518
+
+   519
+
+   520
+
+   521
+
+   522
+
+   523
+
+   524
+
+   525
+
+   526
+
+   527
+
+   528
+
+   529
+
+   530
+
+   531
+
+   532
+
+   533
+
+   534
+
+   535
+
+   536
+
+   537
+
+   538
+
+   539
+
+   540
+
+   541
+
+   542
+
+   543
+
+   544
+
+   545
+
+   546
+
+   547
+
+   548
+
+   549
+
+   550
+
+   551
+
+   552
+
+   553
+
+   554
+
+   555
+
+   556
+
+   557
+
+   558
+
+   559
+
+   560
+
+   561
+
+   562
+
+   563
+
+   564
+
+   565
+
+   566
+
+   567
+
+   568
+
+   569
+
+   570
+
+   571
+
+   572
+
+   573
+
+   574
+
+   575
+
+   576
+
+   577
+
+   578
+
+   579
+
+   580
+
+   581
+
+   582
+
+   583
+
+   584
+
+   585
+
+   586
+
+   587
+
+   588
+
+   589
+
+   590
+
+   591
+
+   592
+
+   593
+
+   594
+
+   595
+
+   596
+
+   597
+
+   598
+
+   599
+
+   600
+
+   601
+
+   602
+
+   603
+
+   604
+
+   605
+
+   606
+
+   607
+
+   608
+
+   609
+
+   610
+
+   611
+
+   612
+
+   613
+
+   614
+
+   615
+
+   616
+
+   617
+
+   618
+
+   619
+
+   620
+
+   621
+
+   622
+
+   623
+
+   624
+
+   625
+
+   626
+
+   627
+
+   628
+
+   629
+
+   630
+
+   631
+
+   632
+
+   633
+
+   634
+
+   635
+
+   636
+
+   637
+
+   638
+
+   639
+
+   640
+
+   641
+
+   642
+
+   643
+
+   644
+
+   645
+
+   646
+
+   647
+
+   648
+
+   649
+
+   650
+
+   651
+
+   652
+
+   653
+
+   654
+
+   655
+
+   656
+
+   657
+
+   658
+
+   659
+
+   660
+
+   661
+
+   662
+
+   663
+
+   664
+
+   665
+
+   666
+
+   667
+
+   668
+
+   669
+
+   670
+
+   671
+
+   672
+
+   673
+
+   674
+
+   675
+
+   676
+
+   677
+
+   678
+
+   679
+
+   680
+
+   681
+
+   682
+
+   683
+
+   684
+
+   685
+
+   686
+
+   687
+
+   688
+
+   689
+
+   690
+
+   691
+
+   692
+
+   693
+
+   694
+
+   695
+
+   696
+
+   697
+
+   698
+
+   699
+
+   700
+
+   701
+
+   702
+
+   703
+
+   704
+
+   705
+
+   706
+
+   707
+
+   708
+
+   709
+
+   710
+
+   711
+
+   712
+
+   713
+
+   714
+
+   715
+
+   716
+
+   717
+
+   718
+
+   719
+
+   720
+
+   721
+
+   722
+
+   723
+
+   724
+
+   725
+
+   726
+
+   727
+
+   728
+
+   729
+
+   730
+
+   731
+
+     1
+
+Please take care!
+     2
+
+     2
+
+Please take care!
+     3
+
+     3
+
+Please take care!
+     4
+
+     4
+
+Please take care!
+     5
+
+     5
+
+split!!
+     6
+
+Please take care!
+     6
+
+     6
+
+split!!
+     7
+
+Please take care!
+     7
+
+     7
+
+split!!
+     8
+
+split!!
+     8
+
+split!!
+     8
+
+Please take care!
+     8
+
+     8
+
+split!!
+     9
+
+split!!
+     9
+
+split!!
+     9
+
+split!!
+     9
+
+split!!
+     9
+
+split!!
+     9
+
+Please take care!
+     9
+
+     9
+
+split!!
+    10
+
+split!!
+    10
+
+split!!
+    10
+
+split!!
+    10
+
+split!!
+    10
+
+split!!
+    10
+
+split!!
+    10
+
+split!!
+    10
+
+split!!
+    10
+
+Please take care!
+    10
+
+    10
+
+split!!
+    11
+
+split!!
+    11
+
+split!!
+    11
+
+split!!
+    11
+
+split!!
+    11
+
+split!!
+    11
+
+split!!
+    11
+
+split!!
+    11
+
+split!!
+    11
+
+Please take care!
+    11
+
+    11
+
+split!!
+    12
+
+split!!
+    12
+
+split!!
+    12
+
+split!!
+    12
+
+split!!
+    12
+
+split!!
+    12
+
+split!!
+    12
+
+split!!
+    12
+
+split!!
+    12
+
+split!!
+    12
+
+Please take care!
+    12
+
+    12
+
+split!!
+    13
+
+split!!
+    13
+
+split!!
+    13
+
+split!!
+    13
+
+split!!
+    13
+
+split!!
+    13
+
+split!!
+    13
+
+Please take care!
+    13
+
+    13
+
+split!!
+    14
+
+split!!
+    14
+
+split!!
+    14
+
+split!!
+    14
+
+Please take care!
+    14
+
+    14
+
+split!!
+    15
+
+split!!
+    15
+
+split!!
+    15
+
+Please take care!
+    15
+
+    15
+
+split!!
+    16
+
+split!!
+    16
+
+split!!
+    16
+
+split!!
+    16
+
+split!!
+    16
+
+split!!
+    16
+
+split!!
+    16
+
+split!!
+    16
+
+Please take care!
+    16
+
+    16
+
+split!!
+    17
+
+split!!
+    17
+
+split!!
+    17
+
+split!!
+    17
+
+split!!
+    17
+
+split!!
+    17
+
+split!!
+    17
+
+Please take care!
+    17
+
+    17
+
+split!!
+    18
+
+split!!
+    18
+
+split!!
+    18
+
+split!!
+    18
+
+split!!
+    18
+
+split!!
+    18
+
+split!!
+    18
+
+split!!
+    18
+
+split!!
+    18
+
+Please take care!
+    18
+
+    18
+
+split!!
+    19
+
+split!!
+    19
+
+split!!
+    19
+
+split!!
+    19
+
+split!!
+    19
+
+split!!
+    19
+
+split!!
+    19
+
+split!!
+    19
+
+Please take care!
+    19
+
+    19
+
+split!!
+    20
+
+split!!
+    20
+
+Please take care!
+    20
+
+    20
+
+split!!
+    21
+
+split!!
+    21
+
+split!!
+    21
+
+split!!
+    21
+
+Please take care!
+    21
+
+    21
+
+split!!
+    22
+
+split!!
+    22
+
+Please take care!
+    22
+
+    22
+
+split!!
+    23
+
+Please take care!
+    23
+
+    23
+
+split!!
+    24
+
+split!!
+    24
+
+split!!
+    24
+
+Please take care!
+    24
+
+    24
+
+split!!
+    25
+
+split!!
+    25
+
+split!!
+    25
+
+Please take care!
+    25
+
+    25
+
+split!!
+    26
+
+split!!
+    26
+
+Please take care!
+    26
+
+    26
+
+split!!
+    27
+
+Please take care!
+    27
+
+    27
+
+Please take care!
+    28
+
+    28
+
+split!!
+    29
+
+split!!
+    29
+
+Please take care!
+    29
+
+    29
+
+split!!
+    30
+
+split!!
+    30
+
+split!!
+    30
+
+Please take care!
+    30
+
+    30
+
+split!!
+    31
+
+split!!
+    31
+
+Please take care!
+    31
+
+    31
+
+split!!
+    32
+
+split!!
+    32
+
+Please take care!
+    32
+
+    32
+
+split!!
+    33
+
+Please take care!
+    33
+
+    33
+
+Please take care!
+    34
+
+    34
+
+split!!
+    35
+
+Please take care!
+    35
+
+    35
+
+Please take care!
+    36
+
+    36
+
+Please take care!
+    37
+
+    37
+
+Please take care!
+    38
+
+    38
+
+split!!
+    39
+
+split!!
+    39
+
+Please take care!
+    39
+
+    39
+
+split!!
+    40
+
+Please take care!
+    40
+
+    40
+
+split!!
+    41
+
+Please take care!
+    41
+
+    41
+
+split!!
+    42
+
+Please take care!
+    42
+
+    42
+
+split!!
+    43
+
+Please take care!
+    43
+
+    43
+
+split!!
+    44
+
+Please take care!
+    44
+
+    44
+
+split!!
+    45
+
+Please take care!
+    45
+
+    45
+
+Please take care!
+    46
+
+    46
+
+Please take care!
+    47
+
+    47
+
+Please take care!
+    48
+
+    48
+
+Please take care!
+    49
+
+    49
+
+split!!
+    50
+
+split!!
+    50
+
+Please take care!
+    50
+
+    50
+
+split!!
+    51
+
+split!!
+    51
+
+Please take care!
+    51
+
+    51
+
+split!!
+    52
+
+Please take care!
+    52
+
+    52
+
+split!!
+    53
+
+Please take care!
+    53
+
+    53
+
+split!!
+    54
+
+Please take care!
+    54
+
+    54
+
+split!!
+    55
+
+split!!
+    55
+
+Please take care!
+    55
+
+    55
+
+split!!
+    56
+
+Please take care!
+    56
+
+    56
+
+Please take care!
+    57
+
+    57
+
+split!!
+    58
+
+Please take care!
+    58
+
+    58
+
+split!!
+    59
+
+Please take care!
+    59
+
+    59
+
+split!!
+    60
+
+split!!
+    60
+
+Please take care!
+    60
+
+    60
+
+split!!
+    61
+
+split!!
+    61
+
+Please take care!
+    61
+
+    61
+
+split!!
+    62
+
+split!!
+    62
+
+split!!
+    62
+
+split!!
+    62
+
+Please take care!
+    62
+
+    62
+
+split!!
+    63
+
+Please take care!
+    63
+
+    63
+
+split!!
+    64
+
+split!!
+    64
+
+Please take care!
+    64
+
+    64
+
+split!!
+    65
+
+Please take care!
+    65
+
+    65
+
+split!!
+    66
+
+Please take care!
+    66
+
+    66
+
+split!!
+    67
+
+split!!
+    67
+
+Please take care!
+    67
+
+    67
+
+split!!
+    68
+
+split!!
+    68
+
+Please take care!
+    68
+
+    68
+
+split!!
+    69
+
+split!!
+    69
+
+Please take care!
+    69
+
+    69
+
+split!!
+    70
+
+Please take care!
+    70
+
+    70
+
+Please take care!
+    71
+
+    71
+
+split!!
+    72
+
+split!!
+    72
+
+Please take care!
+    72
+
+    72
+
+split!!
+    73
+
+Please take care!
+    73
+
+    73
+
+split!!
+    74
+
+Please take care!
+    74
+
+    74
+
+split!!
+    75
+
+Please take care!
+    75
+
+    75
+
+split!!
+    76
+
+split!!
+    76
+
+Please take care!
+    76
+
+    76
+
+split!!
+    77
+
+Please take care!
+    77
+
+    77
+
+Please take care!
+    78
+
+    78
+
+split!!
+    79
+
+Please take care!
+    79
+
+    79
+
+split!!
+    80
+
+split!!
+    80
+
+Please take care!
+    80
+
+    80
+
+split!!
+    81
+
+split!!
+    81
+
+Please take care!
+    81
+
+    81
+
+split!!
+    82
+
+Please take care!
+    82
+
+    82
+
+Please take care!
+    83
+
+    83
+
+split!!
+    84
+
+Please take care!
+    84
+
+    84
+
+split!!
+    85
+
+split!!
+    85
+
+Please take care!
+    85
+
+    85
+
+split!!
+    86
+
+split!!
+    86
+
+split!!
+    86
+
+split!!
+    86
+
+Please take care!
+    86
+
+    86
+
+split!!
+    87
+
+split!!
+    87
+
+split!!
+    87
+
+split!!
+    87
+
+split!!
+    87
+
+Please take care!
+    87
+
+    87
+
+split!!
+    88
+
+split!!
+    88
+
+split!!
+    88
+
+split!!
+    88
+
+split!!
+    88
+
+Please take care!
+    88
+
+    88
+
+split!!
+    89
+
+split!!
+    89
+
+split!!
+    89
+
+Please take care!
+    89
+
+    89
+
+split!!
+    90
+
+Please take care!
+    90
+
+    90
+
+split!!
+    91
+
+Please take care!
+    91
+
+    91
+
+split!!
+    92
+
+split!!
+    92
+
+Please take care!
+    92
+
+    92
+
+split!!
+    93
+
+split!!
+    93
+
+Please take care!
+    93
+
+    93
+
+split!!
+    94
+
+split!!
+    94
+
+Please take care!
+    94
+
+    94
+
+split!!
+    95
+
+split!!
+    95
+
+Please take care!
+    95
+
+    95
+
+split!!
+    96
+
+Please take care!
+    96
+
+    96
+
+split!!
+    97
+
+Please take care!
+    97
+
+    97
+
+split!!
+    98
+
+Please take care!
+    98
+
+    98
+
+Please take care!
+    99
+
+    99
+
+split!!
+   100
+
+split!!
+   100
+
+Please take care!
+   100
+
+   100
+
+split!!
+   101
+
+Please take care!
+   101
+
+   101
+
+split!!
+   102
+
+Please take care!
+   102
+
+   102
+
+split!!
+   103
+
+Please take care!
+   103
+
+   103
+
+Please take care!
+   104
+
+   104
+
+split!!
+   105
+
+split!!
+   105
+
+split!!
+   105
+
+Please take care!
+   105
+
+   105
+
+split!!
+   106
+
+split!!
+   106
+
+Please take care!
+   106
+
+   106
+
+split!!
+   107
+
+split!!
+   107
+
+split!!
+   107
+
+Please take care!
+   107
+
+   107
+
+split!!
+   108
+
+split!!
+   108
+
+split!!
+   108
+
+split!!
+   108
+
+Please take care!
+   108
+
+   108
+
+split!!
+   109
+
+split!!
+   109
+
+split!!
+   109
+
+Please take care!
+   109
+
+   109
+
+split!!
+   110
+
+split!!
+   110
+
+split!!
+   110
+
+Please take care!
+   110
+
+   110
+
+split!!
+   111
+
+split!!
+   111
+
+split!!
+   111
+
+Please take care!
+   111
+
+   111
+
+split!!
+   112
+
+split!!
+   112
+
+Please take care!
+   112
+
+   112
+
+split!!
+   113
+
+split!!
+   113
+
+split!!
+   113
+
+Please take care!
+   113
+
+   113
+
+split!!
+   114
+
+split!!
+   114
+
+split!!
+   114
+
+Please take care!
+   114
+
+   114
+
+split!!
+   115
+
+split!!
+   115
+
+Please take care!
+   115
+
+   115
+
+split!!
+   116
+
+split!!
+   116
+
+Please take care!
+   116
+
+   116
+
+split!!
+   117
+
+split!!
+   117
+
+split!!
+   117
+
+split!!
+   117
+
+Please take care!
+   117
+
+   117
+
+split!!
+   118
+
+split!!
+   118
+
+split!!
+   118
+
+Please take care!
+   118
+
+   118
+
+split!!
+   119
+
+split!!
+   119
+
+split!!
+   119
+
+Please take care!
+   119
+
+   119
+
+split!!
+   120
+
+split!!
+   120
+
+split!!
+   120
+
+split!!
+   120
+
+split!!
+   120
+
+split!!
+   120
+
+Please take care!
+   120
+
+   120
+
+split!!
+   121
+
+split!!
+   121
+
+split!!
+   121
+
+split!!
+   121
+
+split!!
+   121
+
+Please take care!
+   121
+
+   121
+
+split!!
+   122
+
+split!!
+   122
+
+split!!
+   122
+
+split!!
+   122
+
+split!!
+   122
+
+Please take care!
+   122
+
+   122
+
+split!!
+   123
+
+split!!
+   123
+
+split!!
+   123
+
+split!!
+   123
+
+split!!
+   123
+
+Please take care!
+   123
+
+   123
+
+split!!
+   124
+
+split!!
+   124
+
+split!!
+   124
+
+split!!
+   124
+
+Please take care!
+   124
+
+   124
+
+split!!
+   125
+
+split!!
+   125
+
+split!!
+   125
+
+Please take care!
+   125
+
+   125
+
+split!!
+   126
+
+split!!
+   126
+
+split!!
+   126
+
+Please take care!
+   126
+
+   126
+
+split!!
+   127
+
+Please take care!
+   127
+
+   127
+
+Please take care!
+   128
+
+   128
+
+Please take care!
+   129
+
+   129
+
+split!!
+   130
+
+split!!
+   130
+
+Please take care!
+   130
+
+   130
+
+split!!
+   131
+
+split!!
+   131
+
+split!!
+   131
+
+Please take care!
+   131
+
+   131
+
+split!!
+   132
+
+split!!
+   132
+
+split!!
+   132
+
+split!!
+   132
+
+Please take care!
+   132
+
+   132
+
+split!!
+   133
+
+split!!
+   133
+
+split!!
+   133
+
+split!!
+   133
+
+Please take care!
+   133
+
+   133
+
+split!!
+   134
+
+split!!
+   134
+
+split!!
+   134
+
+Please take care!
+   134
+
+   134
+
+split!!
+   135
+
+Please take care!
+   135
+
+   135
+
+split!!
+   136
+
+Please take care!
+   136
+
+   136
+
+split!!
+   137
+
+split!!
+   137
+
+Please take care!
+   137
+
+   137
+
+split!!
+   138
+
+split!!
+   138
+
+split!!
+   138
+
+Please take care!
+   138
+
+   138
+
+split!!
+   139
+
+split!!
+   139
+
+Please take care!
+   139
+
+   139
+
+split!!
+   140
+
+Please take care!
+   140
+
+   140
+
+split!!
+   141
+
+split!!
+   141
+
+split!!
+   141
+
+split!!
+   141
+
+Please take care!
+   141
+
+   141
+
+split!!
+   142
+
+split!!
+   142
+
+split!!
+   142
+
+split!!
+   142
+
+split!!
+   142
+
+Please take care!
+   142
+
+   142
+
+split!!
+   143
+
+split!!
+   143
+
+split!!
+   143
+
+split!!
+   143
+
+split!!
+   143
+
+Please take care!
+   143
+
+   143
+
+split!!
+   144
+
+Please take care!
+   144
+
+   144
+
+split!!
+   145
+
+Please take care!
+   145
+
+   145
+
+split!!
+   146
+
+Please take care!
+   146
+
+   146
+
+split!!
+   147
+
+split!!
+   147
+
+split!!
+   147
+
+Please take care!
+   147
+
+   147
+
+split!!
+   148
+
+split!!
+   148
+
+Please take care!
+   148
+
+   148
+
+split!!
+   149
+
+split!!
+   149
+
+split!!
+   149
+
+Please take care!
+   149
+
+   149
+
+split!!
+   150
+
+split!!
+   150
+
+split!!
+   150
+
+Please take care!
+   150
+
+   150
+
+split!!
+   151
+
+split!!
+   151
+
+split!!
+   151
+
+split!!
+   151
+
+Please take care!
+   151
+
+   151
+
+split!!
+   152
+
+split!!
+   152
+
+split!!
+   152
+
+split!!
+   152
+
+split!!
+   152
+
+Please take care!
+   152
+
+   152
+
+split!!
+   153
+
+split!!
+   153
+
+Please take care!
+   153
+
+   153
+
+split!!
+   154
+
+Please take care!
+   154
+
+   154
+
+split!!
+   155
+
+Please take care!
+   155
+
+   155
+
+Please take care!
+   156
+
+   156
+
+split!!
+   157
+
+Please take care!
+   157
+
+   157
+
+split!!
+   158
+
+Please take care!
+   158
+
+   158
+
+Please take care!
+   159
+
+   159
+
+split!!
+   160
+
+Please take care!
+   160
+
+   160
+
+split!!
+   161
+
+   161
+
+split!!
+   162
+
+Please take care!
+   162
+
+   162
+
+split!!
+   163
+
+split!!
+   163
+
+Please take care!
+   163
+
+   163
+
+split!!
+   164
+
+Please take care!
+   164
+
+   164
+
+split!!
+   165
+
+Please take care!
+   165
+
+   165
+
+split!!
+   166
+
+Please take care!
+   166
+
+   166
+
+split!!
+   167
+
+Please take care!
+   167
+
+   167
+
+split!!
+   168
+
+split!!
+   168
+
+Please take care!
+   168
+
+   168
+
+split!!
+   169
+
+Please take care!
+   169
+
+   169
+
+split!!
+   170
+
+split!!
+   170
+
+Please take care!
+   170
+
+   170
+
+split!!
+   171
+
+split!!
+   171
+
+Please take care!
+   171
+
+   171
+
+split!!
+   172
+
+split!!
+   172
+
+Please take care!
+   172
+
+   172
+
+split!!
+   173
+
+Please take care!
+   173
+
+   173
+
+Please take care!
+   174
+
+   174
+
+split!!
+   175
+
+split!!
+   175
+
+Please take care!
+   175
+
+   175
+
+split!!
+   176
+
+split!!
+   176
+
+Please take care!
+   176
+
+   176
+
+split!!
+   177
+
+split!!
+   177
+
+Please take care!
+   177
+
+   177
+
+split!!
+   178
+
+split!!
+   178
+
+split!!
+   178
+
+split!!
+   178
+
+Please take care!
+   178
+
+   178
+
+split!!
+   179
+
+split!!
+   179
+
+split!!
+   179
+
+split!!
+   179
+
+Please take care!
+   179
+
+   179
+
+split!!
+   180
+
+split!!
+   180
+
+Please take care!
+   180
+
+   180
+
+split!!
+   181
+
+split!!
+   181
+
+split!!
+   181
+
+Please take care!
+   181
+
+   181
+
+split!!
+   182
+
+Please take care!
+   182
+
+   182
+
+Please take care!
+   183
+
+   183
+
+split!!
+   184
+
+split!!
+   184
+
+split!!
+   184
+
+split!!
+   184
+
+split!!
+   184
+
+Please take care!
+   184
+
+   184
+
+split!!
+   185
+
+split!!
+   185
+
+split!!
+   185
+
+split!!
+   185
+
+split!!
+   185
+
+Please take care!
+   185
+
+   185
+
+split!!
+   186
+
+split!!
+   186
+
+split!!
+   186
+
+Please take care!
+   186
+
+   186
+
+split!!
+   187
+
+Please take care!
+   187
+
+   187
+
+split!!
+   188
+
+Please take care!
+   188
+
+   188
+
+split!!
+   189
+
+Please take care!
+   189
+
+   189
+
+Please take care!
+   190
+
+   190
+
+split!!
+   191
+
+Please take care!
+   191
+
+   191
+
+split!!
+   192
+
+split!!
+   192
+
+Please take care!
+   192
+
+   192
+
+split!!
+   193
+
+split!!
+   193
+
+Please take care!
+   193
+
+   193
+
+split!!
+   194
+
+Please take care!
+   194
+
+   194
+
+split!!
+   195
+
+Please take care!
+   195
+
+   195
+
+split!!
+   196
+
+Please take care!
+   196
+
+   196
+
+split!!
+   197
+
+split!!
+   197
+
+Please take care!
+   197
+
+   197
+
+split!!
+   198
+
+Please take care!
+   198
+
+   198
+
+split!!
+   199
+
+Please take care!
+   199
+
+   199
+
+split!!
+   200
+
+Please take care!
+   200
+
+   200
+
+Please take care!
+   201
+
+   201
+
+Please take care!
+   202
+
+   202
+
+split!!
+   203
+
+Please take care!
+   203
+
+   203
+
+split!!
+   204
+
+Please take care!
+   204
+
+   204
+
+split!!
+   205
+
+Please take care!
+   205
+
+   205
+
+split!!
+   206
+
+Please take care!
+   206
+
+   206
+
+split!!
+   207
+
+Please take care!
+   207
+
+   207
+
+split!!
+   208
+
+split!!
+   208
+
+Please take care!
+   208
+
+   208
+
+split!!
+   209
+
+Please take care!
+   209
+
+   209
+
+Please take care!
+   210
+
+   210
+
+split!!
+   211
+
+Please take care!
+   211
+
+   211
+
+Please take care!
+   212
+
+   212
+
+split!!
+   213
+
+Please take care!
+   213
+
+   213
+
+split!!
+   214
+
+split!!
+   214
+
+Please take care!
+   214
+
+   214
+
+split!!
+   215
+
+split!!
+   215
+
+split!!
+   215
+
+split!!
+   215
+
+Please take care!
+   215
+
+   215
+
+split!!
+   216
+
+split!!
+   216
+
+Please take care!
+   216
+
+   216
+
+split!!
+   217
+
+split!!
+   217
+
+split!!
+   217
+
+Please take care!
+   217
+
+   217
+
+split!!
+   218
+
+split!!
+   218
+
+split!!
+   218
+
+Please take care!
+   218
+
+   218
+
+split!!
+   219
+
+split!!
+   219
+
+Please take care!
+   219
+
+   219
+
+split!!
+   220
+
+split!!
+   220
+
+Please take care!
+   220
+
+   220
+
+split!!
+   221
+
+split!!
+   221
+
+Please take care!
+   221
+
+   221
+
+split!!
+   222
+
+Please take care!
+   222
+
+   222
+
+split!!
+   223
+
+split!!
+   223
+
+Please take care!
+   223
+
+   223
+
+split!!
+   224
+
+split!!
+   224
+
+split!!
+   224
+
+split!!
+   224
+
+Please take care!
+   224
+
+   224
+
+split!!
+   225
+
+split!!
+   225
+
+split!!
+   225
+
+Please take care!
+   225
+
+   225
+
+split!!
+   226
+
+split!!
+   226
+
+split!!
+   226
+
+Please take care!
+   226
+
+   226
+
+split!!
+   227
+
+split!!
+   227
+
+split!!
+   227
+
+Please take care!
+   227
+
+   227
+
+split!!
+   228
+
+split!!
+   228
+
+Please take care!
+   228
+
+   228
+
+split!!
+   229
+
+Please take care!
+   229
+
+   229
+
+split!!
+   230
+
+Please take care!
+   230
+
+   230
+
+Please take care!
+   231
+
+   231
+
+split!!
+   232
+
+split!!
+   232
+
+split!!
+   232
+
+Please take care!
+   232
+
+   232
+
+split!!
+   233
+
+Please take care!
+   233
+
+   233
+
+Please take care!
+   234
+
+   234
+
+Please take care!
+   235
+
+   235
+
+split!!
+   236
+
+Please take care!
+   236
+
+   236
+
+split!!
+   237
+
+split!!
+   237
+
+Please take care!
+   237
+
+   237
+
+split!!
+   238
+
+Please take care!
+   238
+
+   238
+
+split!!
+   239
+
+Please take care!
+   239
+
+   239
+
+split!!
+   240
+
+split!!
+   240
+
+Please take care!
+   240
+
+   240
+
+split!!
+   241
+
+Please take care!
+   241
+
+   241
+
+split!!
+   242
+
+Please take care!
+   242
+
+   242
+
+Please take care!
+   243
+
+   243
+
+Please take care!
+   244
+
+   244
+
+Please take care!
+   245
+
+   245
+
+Please take care!
+   246
+
+   246
+
+split!!
+   247
+
+Please take care!
+   247
+
+   247
+
+split!!
+   248
+
+split!!
+   248
+
+Please take care!
+   248
+
+   248
+
+split!!
+   249
+
+split!!
+   249
+
+Please take care!
+   249
+
+   249
+
+split!!
+   250
+
+split!!
+   250
+
+Please take care!
+   250
+
+   250
+
+Please take care!
+   251
+
+   251
+
+split!!
+   252
+
+Please take care!
+   252
+
+   252
+
+split!!
+   253
+
+split!!
+   253
+
+Please take care!
+   253
+
+   253
+
+split!!
+   254
+
+split!!
+   254
+
+Please take care!
+   254
+
+   254
+
+split!!
+   255
+
+split!!
+   255
+
+Please take care!
+   255
+
+   255
+
+split!!
+   256
+
+Please take care!
+   256
+
+   256
+
+split!!
+   257
+
+split!!
+   257
+
+split!!
+   257
+
+split!!
+   257
+
+Please take care!
+   257
+
+   257
+
+split!!
+   258
+
+split!!
+   258
+
+split!!
+   258
+
+Please take care!
+   258
+
+   258
+
+split!!
+   259
+
+split!!
+   259
+
+Please take care!
+   259
+
+   259
+
+split!!
+   260
+
+split!!
+   260
+
+Please take care!
+   260
+
+   260
+
+split!!
+   261
+
+split!!
+   261
+
+Please take care!
+   261
+
+   261
+
+split!!
+   262
+
+split!!
+   262
+
+split!!
+   262
+
+Please take care!
+   262
+
+   262
+
+split!!
+   263
+
+split!!
+   263
+
+Please take care!
+   263
+
+   263
+
+split!!
+   264
+
+Please take care!
+   264
+
+   264
+
+split!!
+   265
+
+Please take care!
+   265
+
+   265
+
+Please take care!
+   266
+
+   266
+
+Please take care!
+   267
+
+   267
+
+split!!
+   268
+
+Please take care!
+   268
+
+   268
+
+Please take care!
+   269
+
+   269
+
+Please take care!
+   270
+
+   270
+
+Please take care!
+   271
+
+   271
+
+Please take care!
+   272
+
+   272
+
+split!!
+   273
+
+split!!
+   273
+
+Please take care!
+   273
+
+   273
+
+split!!
+   274
+
+split!!
+   274
+
+Please take care!
+   274
+
+   274
+
+Please take care!
+   275
+
+   275
+
+Please take care!
+   276
+
+   276
+
+split!!
+   277
+
+Please take care!
+   277
+
+   277
+
+split!!
+   278
+
+Please take care!
+   278
+
+   278
+
+split!!
+   279
+
+Please take care!
+   279
+
+   279
+
+Please take care!
+   280
+
+   280
+
+split!!
+   281
+
+Please take care!
+   281
+
+   281
+
+split!!
+   282
+
+split!!
+   282
+
+Please take care!
+   282
+
+   282
+
+split!!
+   283
+
+Please take care!
+   283
+
+   283
+
+split!!
+   284
+
+Please take care!
+   284
+
+   284
+
+split!!
+   285
+
+split!!
+   285
+
+Please take care!
+   285
+
+   285
+
+split!!
+   286
+
+split!!
+   286
+
+Please take care!
+   286
+
+   286
+
+split!!
+   287
+
+split!!
+   287
+
+Please take care!
+   287
+
+   287
+
+split!!
+   288
+
+split!!
+   288
+
+split!!
+   288
+
+Please take care!
+   288
+
+   288
+
+split!!
+   289
+
+split!!
+   289
+
+Please take care!
+   289
+
+   289
+
+split!!
+   290
+
+split!!
+   290
+
+Please take care!
+   290
+
+   290
+
+split!!
+   291
+
+split!!
+   291
+
+Please take care!
+   291
+
+   291
+
+split!!
+   292
+
+split!!
+   292
+
+Please take care!
+   292
+
+   292
+
+split!!
+   293
+
+split!!
+   293
+
+split!!
+   293
+
+Please take care!
+   293
+
+   293
+
+split!!
+   294
+
+split!!
+   294
+
+Please take care!
+   294
+
+   294
+
+split!!
+   295
+
+Please take care!
+   295
+
+   295
+
+split!!
+   296
+
+split!!
+   296
+
+split!!
+   296
+
+Please take care!
+   296
+
+   296
+
+split!!
+   297
+
+split!!
+   297
+
+Please take care!
+   297
+
+   297
+
+Please take care!
+   298
+
+   298
+
+Please take care!
+   299
+
+   299
+
+split!!
+   300
+
+Please take care!
+   300
+
+   300
+
+split!!
+   301
+
+Please take care!
+   301
+
+   301
+
+split!!
+   302
+
+Please take care!
+   302
+
+   302
+
+Please take care!
+   303
+
+   303
+
+Please take care!
+   304
+
+   304
+
+split!!
+   305
+
+Please take care!
+   305
+
+   305
+
+Please take care!
+   306
+
+   306
+
+Please take care!
+   307
+
+   307
+
+split!!
+   308
+
+Please take care!
+   308
+
+   308
+
+split!!
+   309
+
+split!!
+   309
+
+Please take care!
+   309
+
+   309
+
+split!!
+   310
+
+split!!
+   310
+
+Please take care!
+   310
+
+   310
+
+split!!
+   311
+
+Please take care!
+   311
+
+   311
+
+split!!
+   312
+
+split!!
+   312
+
+split!!
+   312
+
+Please take care!
+   312
+
+   312
+
+split!!
+   313
+
+split!!
+   313
+
+split!!
+   313
+
+Please take care!
+   313
+
+   313
+
+split!!
+   314
+
+split!!
+   314
+
+split!!
+   314
+
+Please take care!
+   314
+
+   314
+
+split!!
+   315
+
+split!!
+   315
+
+Please take care!
+   315
+
+   315
+
+split!!
+   316
+
+split!!
+   316
+
+Please take care!
+   316
+
+   316
+
+Please take care!
+   317
+
+   317
+
+split!!
+   318
+
+Please take care!
+   318
+
+   318
+
+split!!
+   319
+
+Please take care!
+   319
+
+   319
+
+split!!
+   320
+
+Please take care!
+   320
+
+   320
+
+split!!
+   321
+
+Please take care!
+   321
+
+   321
+
+Please take care!
+   322
+
+   322
+
+Please take care!
+   323
+
+   323
+
+Please take care!
+   324
+
+   324
+
+Please take care!
+   325
+
+   325
+
+Please take care!
+   326
+
+   326
+
+Please take care!
+   327
+
+   327
+
+Please take care!
+   328
+
+   328
+
+split!!
+   329
+
+Please take care!
+   329
+
+   329
+
+split!!
+   330
+
+Please take care!
+   330
+
+   330
+
+split!!
+   331
+
+Please take care!
+   331
+
+   331
+
+split!!
+   332
+
+Please take care!
+   332
+
+   332
+
+Please take care!
+   333
+
+   333
+
+split!!
+   334
+
+split!!
+   334
+
+split!!
+   334
+
+Please take care!
+   334
+
+   334
+
+split!!
+   335
+
+split!!
+   335
+
+split!!
+   335
+
+split!!
+   335
+
+Please take care!
+   335
+
+   335
+
+split!!
+   336
+
+split!!
+   336
+
+split!!
+   336
+
+split!!
+   336
+
+split!!
+   336
+
+Please take care!
+   336
+
+   336
+
+split!!
+   337
+
+split!!
+   337
+
+split!!
+   337
+
+Please take care!
+   337
+
+   337
+
+split!!
+   338
+
+split!!
+   338
+
+split!!
+   338
+
+Please take care!
+   338
+
+   338
+
+split!!
+   339
+
+split!!
+   339
+
+Please take care!
+   339
+
+   339
+
+split!!
+   340
+
+split!!
+   340
+
+split!!
+   340
+
+split!!
+   340
+
+split!!
+   340
+
+Please take care!
+   340
+
+   340
+
+split!!
+   341
+
+split!!
+   341
+
+split!!
+   341
+
+split!!
+   341
+
+Please take care!
+   341
+
+   341
+
+split!!
+   342
+
+split!!
+   342
+
+Please take care!
+   342
+
+   342
+
+split!!
+   343
+
+split!!
+   343
+
+   343
+
+Please take care!
+   344
+
+   344
+
+Please take care!
+   345
+
+   345
+
+Please take care!
+   346
+
+   346
+
+split!!
+   347
+
+split!!
+   347
+
+Please take care!
+   347
+
+   347
+
+split!!
+   348
+
+Please take care!
+   348
+
+   348
+
+split!!
+   349
+
+Please take care!
+   349
+
+   349
+
+split!!
+   350
+
+Please take care!
+   350
+
+   350
+
+split!!
+   351
+
+split!!
+   351
+
+Please take care!
+   351
+
+   351
+
+split!!
+   352
+
+Please take care!
+   352
+
+   352
+
+Please take care!
+   353
+
+   353
+
+split!!
+   354
+
+Please take care!
+   354
+
+   354
+
+split!!
+   355
+
+split!!
+   355
+
+Please take care!
+   355
+
+   355
+
+split!!
+   356
+
+split!!
+   356
+
+Please take care!
+   356
+
+   356
+
+split!!
+   357
+
+Please take care!
+   357
+
+   357
+
+split!!
+   358
+
+split!!
+   358
+
+split!!
+   358
+
+Please take care!
+   358
+
+   358
+
+split!!
+   359
+
+split!!
+   359
+
+Please take care!
+   359
+
+   359
+
+split!!
+   360
+
+split!!
+   360
+
+split!!
+   360
+
+Please take care!
+   360
+
+   360
+
+split!!
+   361
+
+split!!
+   361
+
+Please take care!
+   361
+
+   361
+
+split!!
+   362
+
+Please take care!
+   362
+
+   362
+
+split!!
+   363
+
+split!!
+   363
+
+split!!
+   363
+
+Please take care!
+   363
+
+   363
+
+split!!
+   364
+
+split!!
+   364
+
+split!!
+   364
+
+Please take care!
+   364
+
+   364
+
+split!!
+   365
+
+split!!
+   365
+
+Please take care!
+   365
+
+   365
+
+split!!
+   366
+
+split!!
+   366
+
+split!!
+   366
+
+Please take care!
+   366
+
+   366
+
+split!!
+   367
+
+split!!
+   367
+
+Please take care!
+   367
+
+   367
+
+split!!
+   368
+
+split!!
+   368
+
+Please take care!
+   368
+
+   368
+
+split!!
+   369
+
+Please take care!
+   369
+
+   369
+
+split!!
+   370
+
+split!!
+   370
+
+split!!
+   370
+
+Please take care!
+   370
+
+   370
+
+split!!
+   371
+
+split!!
+   371
+
+split!!
+   371
+
+Please take care!
+   371
+
+   371
+
+split!!
+   372
+
+split!!
+   372
+
+split!!
+   372
+
+split!!
+   372
+
+Please take care!
+   372
+
+   372
+
+split!!
+   373
+
+split!!
+   373
+
+split!!
+   373
+
+split!!
+   373
+
+Please take care!
+   373
+
+   373
+
+split!!
+   374
+
+split!!
+   374
+
+split!!
+   374
+
+split!!
+   374
+
+split!!
+   374
+
+split!!
+   374
+
+Please take care!
+   374
+
+   374
+
+split!!
+   375
+
+split!!
+   375
+
+split!!
+   375
+
+split!!
+   375
+
+split!!
+   375
+
+split!!
+   375
+
+Please take care!
+   375
+
+   375
+
+split!!
+   376
+
+split!!
+   376
+
+split!!
+   376
+
+split!!
+   376
+
+split!!
+   376
+
+Please take care!
+   376
+
+   376
+
+split!!
+   377
+
+split!!
+   377
+
+split!!
+   377
+
+split!!
+   377
+
+split!!
+   377
+
+Please take care!
+   377
+
+   377
+
+split!!
+   378
+
+split!!
+   378
+
+split!!
+   378
+
+Please take care!
+   378
+
+   378
+
+split!!
+   379
+
+split!!
+   379
+
+Please take care!
+   379
+
+   379
+
+split!!
+   380
+
+split!!
+   380
+
+split!!
+   380
+
+Please take care!
+   380
+
+   380
+
+split!!
+   381
+
+split!!
+   381
+
+split!!
+   381
+
+Please take care!
+   381
+
+   381
+
+split!!
+   382
+
+Please take care!
+   382
+
+   382
+
+split!!
+   383
+
+split!!
+   383
+
+split!!
+   383
+
+Please take care!
+   383
+
+   383
+
+split!!
+   384
+
+split!!
+   384
+
+split!!
+   384
+
+split!!
+   384
+
+Please take care!
+   384
+
+   384
+
+split!!
+   385
+
+split!!
+   385
+
+split!!
+   385
+
+split!!
+   385
+
+split!!
+   385
+
+split!!
+   385
+
+Please take care!
+   385
+
+   385
+
+split!!
+   386
+
+split!!
+   386
+
+split!!
+   386
+
+split!!
+   386
+
+split!!
+   386
+
+split!!
+   386
+
+split!!
+   386
+
+split!!
+   386
+
+split!!
+   386
+
+split!!
+   386
+
+Please take care!
+   386
+
+   386
+
+split!!
+   387
+
+split!!
+   387
+
+split!!
+   387
+
+split!!
+   387
+
+split!!
+   387
+
+split!!
+   387
+
+split!!
+   387
+
+split!!
+   387
+
+split!!
+   387
+
+Please take care!
+   387
+
+   387
+
+split!!
+   388
+
+split!!
+   388
+
+split!!
+   388
+
+split!!
+   388
+
+split!!
+   388
+
+split!!
+   388
+
+split!!
+   388
+
+Please take care!
+   388
+
+   388
+
+split!!
+   389
+
+split!!
+   389
+
+split!!
+   389
+
+split!!
+   389
+
+split!!
+   389
+
+split!!
+   389
+
+split!!
+   389
+
+split!!
+   389
+
+split!!
+   389
+
+split!!
+   389
+
+Please take care!
+   389
+
+   389
+
+split!!
+   390
+
+split!!
+   390
+
+split!!
+   390
+
+split!!
+   390
+
+split!!
+   390
+
+split!!
+   390
+
+split!!
+   390
+
+split!!
+   390
+
+split!!
+   390
+
+split!!
+   390
+
+Please take care!
+   390
+
+   390
+
+split!!
+   391
+
+split!!
+   391
+
+split!!
+   391
+
+split!!
+   391
+
+split!!
+   391
+
+split!!
+   391
+
+split!!
+   391
+
+split!!
+   391
+
+split!!
+   391
+
+split!!
+   391
+
+split!!
+   391
+
+Please take care!
+   391
+
+   391
+
+split!!
+   392
+
+split!!
+   392
+
+split!!
+   392
+
+split!!
+   392
+
+split!!
+   392
+
+split!!
+   392
+
+split!!
+   392
+
+split!!
+   392
+
+Please take care!
+   392
+
+   392
+
+split!!
+   393
+
+split!!
+   393
+
+split!!
+   393
+
+split!!
+   393
+
+Please take care!
+   393
+
+   393
+
+split!!
+   394
+
+split!!
+   394
+
+split!!
+   394
+
+split!!
+   394
+
+split!!
+   394
+
+Please take care!
+   394
+
+   394
+
+split!!
+   395
+
+split!!
+   395
+
+split!!
+   395
+
+split!!
+   395
+
+split!!
+   395
+
+split!!
+   395
+
+split!!
+   395
+
+Please take care!
+   395
+
+   395
+
+split!!
+   396
+
+split!!
+   396
+
+split!!
+   396
+
+split!!
+   396
+
+split!!
+   396
+
+Please take care!
+   396
+
+   396
+
+split!!
+   397
+
+split!!
+   397
+
+split!!
+   397
+
+split!!
+   397
+
+split!!
+   397
+
+split!!
+   397
+
+split!!
+   397
+
+split!!
+   397
+
+Please take care!
+   397
+
+   397
+
+split!!
+   398
+
+split!!
+   398
+
+split!!
+   398
+
+split!!
+   398
+
+split!!
+   398
+
+Please take care!
+   398
+
+   398
+
+split!!
+   399
+
+split!!
+   399
+
+split!!
+   399
+
+split!!
+   399
+
+split!!
+   399
+
+Please take care!
+   399
+
+   399
+
+split!!
+   400
+
+split!!
+   400
+
+split!!
+   400
+
+split!!
+   400
+
+Please take care!
+   400
+
+   400
+
+split!!
+   401
+
+split!!
+   401
+
+split!!
+   401
+
+split!!
+   401
+
+split!!
+   401
+
+split!!
+   401
+
+Please take care!
+   401
+
+   401
+
+split!!
+   402
+
+split!!
+   402
+
+split!!
+   402
+
+split!!
+   402
+
+split!!
+   402
+
+Please take care!
+   402
+
+   402
+
+split!!
+   403
+
+split!!
+   403
+
+split!!
+   403
+
+split!!
+   403
+
+split!!
+   403
+
+split!!
+   403
+
+Please take care!
+   403
+
+   403
+
+split!!
+   404
+
+split!!
+   404
+
+split!!
+   404
+
+split!!
+   404
+
+split!!
+   404
+
+split!!
+   404
+
+Please take care!
+   404
+
+   404
+
+split!!
+   405
+
+split!!
+   405
+
+split!!
+   405
+
+split!!
+   405
+
+split!!
+   405
+
+split!!
+   405
+
+Please take care!
+   405
+
+   405
+
+split!!
+   406
+
+split!!
+   406
+
+Please take care!
+   406
+
+   406
+
+split!!
+   407
+
+split!!
+   407
+
+Please take care!
+   407
+
+   407
+
+split!!
+   408
+
+split!!
+   408
+
+Please take care!
+   408
+
+   408
+
+split!!
+   409
+
+split!!
+   409
+
+split!!
+   409
+
+split!!
+   409
+
+Please take care!
+   409
+
+   409
+
+split!!
+   410
+
+split!!
+   410
+
+split!!
+   410
+
+split!!
+   410
+
+Please take care!
+   410
+
+   410
+
+split!!
+   411
+
+split!!
+   411
+
+split!!
+   411
+
+split!!
+   411
+
+Please take care!
+   411
+
+   411
+
+split!!
+   412
+
+split!!
+   412
+
+split!!
+   412
+
+split!!
+   412
+
+Please take care!
+   412
+
+   412
+
+split!!
+   413
+
+split!!
+   413
+
+split!!
+   413
+
+split!!
+   413
+
+Please take care!
+   413
+
+   413
+
+split!!
+   414
+
+split!!
+   414
+
+Please take care!
+   414
+
+   414
+
+split!!
+   415
+
+split!!
+   415
+
+split!!
+   415
+
+Please take care!
+   415
+
+   415
+
+split!!
+   416
+
+split!!
+   416
+
+Please take care!
+   416
+
+   416
+
+split!!
+   417
+
+split!!
+   417
+
+split!!
+   417
+
+Please take care!
+   417
+
+   417
+
+split!!
+   418
+
+split!!
+   418
+
+split!!
+   418
+
+split!!
+   418
+
+Please take care!
+   418
+
+   418
+
+split!!
+   419
+
+Please take care!
+   419
+
+   419
+
+split!!
+   420
+
+Please take care!
+   420
+
+   420
+
+split!!
+   421
+
+split!!
+   421
+
+split!!
+   421
+
+split!!
+   421
+
+Please take care!
+   421
+
+   421
+
+split!!
+   422
+
+split!!
+   422
+
+split!!
+   422
+
+split!!
+   422
+
+Please take care!
+   422
+
+   422
+
+split!!
+   423
+
+split!!
+   423
+
+split!!
+   423
+
+split!!
+   423
+
+split!!
+   423
+
+split!!
+   423
+
+Please take care!
+   423
+
+   423
+
+split!!
+   424
+
+split!!
+   424
+
+split!!
+   424
+
+split!!
+   424
+
+split!!
+   424
+
+split!!
+   424
+
+Please take care!
+   424
+
+   424
+
+split!!
+   425
+
+split!!
+   425
+
+split!!
+   425
+
+split!!
+   425
+
+Please take care!
+   425
+
+   425
+
+split!!
+   426
+
+split!!
+   426
+
+split!!
+   426
+
+Please take care!
+   426
+
+   426
+
+split!!
+   427
+
+split!!
+   427
+
+Please take care!
+   427
+
+   427
+
+split!!
+   428
+
+split!!
+   428
+
+split!!
+   428
+
+split!!
+   428
+
+Please take care!
+   428
+
+   428
+
+split!!
+   429
+
+split!!
+   429
+
+split!!
+   429
+
+split!!
+   429
+
+split!!
+   429
+
+split!!
+   429
+
+Please take care!
+   429
+
+   429
+
+split!!
+   430
+
+split!!
+   430
+
+split!!
+   430
+
+split!!
+   430
+
+split!!
+   430
+
+split!!
+   430
+
+split!!
+   430
+
+Please take care!
+   430
+
+   430
+
+split!!
+   431
+
+split!!
+   431
+
+split!!
+   431
+
+split!!
+   431
+
+split!!
+   431
+
+Please take care!
+   431
+
+   431
+
+split!!
+   432
+
+split!!
+   432
+
+split!!
+   432
+
+split!!
+   432
+
+split!!
+   432
+
+Please take care!
+   432
+
+   432
+
+split!!
+   433
+
+split!!
+   433
+
+split!!
+   433
+
+split!!
+   433
+
+split!!
+   433
+
+Please take care!
+   433
+
+   433
+
+split!!
+   434
+
+split!!
+   434
+
+split!!
+   434
+
+split!!
+   434
+
+split!!
+   434
+
+Please take care!
+   434
+
+   434
+
+split!!
+   435
+
+split!!
+   435
+
+split!!
+   435
+
+Please take care!
+   435
+
+   435
+
+split!!
+   436
+
+split!!
+   436
+
+split!!
+   436
+
+split!!
+   436
+
+Please take care!
+   436
+
+   436
+
+split!!
+   437
+
+split!!
+   437
+
+split!!
+   437
+
+split!!
+   437
+
+split!!
+   437
+
+Please take care!
+   437
+
+   437
+
+split!!
+   438
+
+split!!
+   438
+
+split!!
+   438
+
+split!!
+   438
+
+Please take care!
+   438
+
+   438
+
+split!!
+   439
+
+split!!
+   439
+
+Please take care!
+   439
+
+   439
+
+split!!
+   440
+
+split!!
+   440
+
+Please take care!
+   440
+
+   440
+
+split!!
+   441
+
+split!!
+   441
+
+split!!
+   441
+
+Please take care!
+   441
+
+   441
+
+split!!
+   442
+
+split!!
+   442
+
+split!!
+   442
+
+Please take care!
+   442
+
+   442
+
+split!!
+   443
+
+Please take care!
+   443
+
+   443
+
+split!!
+   444
+
+Please take care!
+   444
+
+   444
+
+split!!
+   445
+
+Please take care!
+   445
+
+   445
+
+split!!
+   446
+
+Please take care!
+   446
+
+   446
+
+split!!
+   447
+
+Please take care!
+   447
+
+   447
+
+split!!
+   448
+
+split!!
+   448
+
+split!!
+   448
+
+Please take care!
+   448
+
+   448
+
+split!!
+   449
+
+split!!
+   449
+
+Please take care!
+   449
+
+   449
+
+split!!
+   450
+
+split!!
+   450
+
+Please take care!
+   450
+
+   450
+
+split!!
+   451
+
+split!!
+   451
+
+split!!
+   451
+
+split!!
+   451
+
+Please take care!
+   451
+
+   451
+
+split!!
+   452
+
+split!!
+   452
+
+split!!
+   452
+
+split!!
+   452
+
+split!!
+   452
+
+Please take care!
+   452
+
+   452
+
+split!!
+   453
+
+split!!
+   453
+
+split!!
+   453
+
+split!!
+   453
+
+split!!
+   453
+
+Please take care!
+   453
+
+   453
+
+split!!
+   454
+
+split!!
+   454
+
+split!!
+   454
+
+split!!
+   454
+
+split!!
+   454
+
+split!!
+   454
+
+Please take care!
+   454
+
+   454
+
+split!!
+   455
+
+split!!
+   455
+
+split!!
+   455
+
+split!!
+   455
+
+split!!
+   455
+
+split!!
+   455
+
+split!!
+   455
+
+Please take care!
+   455
+
+   455
+
+split!!
+   456
+
+split!!
+   456
+
+split!!
+   456
+
+split!!
+   456
+
+split!!
+   456
+
+split!!
+   456
+
+Please take care!
+   456
+
+   456
+
+split!!
+   457
+
+split!!
+   457
+
+split!!
+   457
+
+split!!
+   457
+
+Please take care!
+   457
+
+   457
+
+split!!
+   458
+
+split!!
+   458
+
+split!!
+   458
+
+split!!
+   458
+
+split!!
+   458
+
+Please take care!
+   458
+
+   458
+
+split!!
+   459
+
+split!!
+   459
+
+split!!
+   459
+
+split!!
+   459
+
+Please take care!
+   459
+
+   459
+
+split!!
+   460
+
+split!!
+   460
+
+Please take care!
+   460
+
+   460
+
+split!!
+   461
+
+split!!
+   461
+
+split!!
+   461
+
+Please take care!
+   461
+
+   461
+
+split!!
+   462
+
+split!!
+   462
+
+split!!
+   462
+
+split!!
+   462
+
+split!!
+   462
+
+Please take care!
+   462
+
+   462
+
+split!!
+   463
+
+split!!
+   463
+
+split!!
+   463
+
+split!!
+   463
+
+split!!
+   463
+
+split!!
+   463
+
+Please take care!
+   463
+
+   463
+
+split!!
+   464
+
+split!!
+   464
+
+split!!
+   464
+
+split!!
+   464
+
+split!!
+   464
+
+split!!
+   464
+
+split!!
+   464
+
+split!!
+   464
+
+split!!
+   464
+
+Please take care!
+   464
+
+   464
+
+split!!
+   465
+
+split!!
+   465
+
+split!!
+   465
+
+split!!
+   465
+
+split!!
+   465
+
+split!!
+   465
+
+split!!
+   465
+
+split!!
+   465
+
+split!!
+   465
+
+split!!
+   465
+
+Please take care!
+   465
+
+   465
+
+split!!
+   466
+
+split!!
+   466
+
+split!!
+   466
+
+split!!
+   466
+
+split!!
+   466
+
+split!!
+   466
+
+split!!
+   466
+
+split!!
+   466
+
+Please take care!
+   466
+
+   466
+
+split!!
+   467
+
+split!!
+   467
+
+split!!
+   467
+
+split!!
+   467
+
+split!!
+   467
+
+split!!
+   467
+
+Please take care!
+   467
+
+   467
+
+split!!
+   468
+
+split!!
+   468
+
+split!!
+   468
+
+split!!
+   468
+
+split!!
+   468
+
+Please take care!
+   468
+
+   468
+
+split!!
+   469
+
+split!!
+   469
+
+split!!
+   469
+
+split!!
+   469
+
+split!!
+   469
+
+split!!
+   469
+
+Please take care!
+   469
+
+   469
+
+split!!
+   470
+
+split!!
+   470
+
+split!!
+   470
+
+split!!
+   470
+
+split!!
+   470
+
+split!!
+   470
+
+Please take care!
+   470
+
+   470
+
+split!!
+   471
+
+split!!
+   471
+
+split!!
+   471
+
+split!!
+   471
+
+split!!
+   471
+
+Please take care!
+   471
+
+   471
+
+split!!
+   472
+
+split!!
+   472
+
+split!!
+   472
+
+split!!
+   472
+
+Please take care!
+   472
+
+   472
+
+split!!
+   473
+
+split!!
+   473
+
+Please take care!
+   473
+
+   473
+
+split!!
+   474
+
+split!!
+   474
+
+split!!
+   474
+
+split!!
+   474
+
+Please take care!
+   474
+
+   474
+
+split!!
+   475
+
+split!!
+   475
+
+split!!
+   475
+
+split!!
+   475
+
+Please take care!
+   475
+
+   475
+
+split!!
+   476
+
+split!!
+   476
+
+Please take care!
+   476
+
+   476
+
+split!!
+   477
+
+split!!
+   477
+
+split!!
+   477
+
+Please take care!
+   477
+
+   477
+
+split!!
+   478
+
+split!!
+   478
+
+split!!
+   478
+
+split!!
+   478
+
+split!!
+   478
+
+Please take care!
+   478
+
+   478
+
+split!!
+   479
+
+split!!
+   479
+
+split!!
+   479
+
+split!!
+   479
+
+Please take care!
+   479
+
+   479
+
+split!!
+   480
+
+split!!
+   480
+
+split!!
+   480
+
+split!!
+   480
+
+split!!
+   480
+
+Please take care!
+   480
+
+   480
+
+split!!
+   481
+
+split!!
+   481
+
+split!!
+   481
+
+split!!
+   481
+
+split!!
+   481
+
+split!!
+   481
+
+split!!
+   481
+
+split!!
+   481
+
+Please take care!
+   481
+
+   481
+
+split!!
+   482
+
+split!!
+   482
+
+split!!
+   482
+
+split!!
+   482
+
+split!!
+   482
+
+split!!
+   482
+
+split!!
+   482
+
+Please take care!
+   482
+
+   482
+
+split!!
+   483
+
+split!!
+   483
+
+split!!
+   483
+
+Please take care!
+   483
+
+   483
+
+split!!
+   484
+
+split!!
+   484
+
+split!!
+   484
+
+Please take care!
+   484
+
+   484
+
+split!!
+   485
+
+Please take care!
+   485
+
+   485
+
+Please take care!
+   486
+
+   486
+
+Please take care!
+   487
+
+   487
+
+split!!
+   488
+
+Please take care!
+   488
+
+   488
+
+split!!
+   489
+
+split!!
+   489
+
+Please take care!
+   489
+
+   489
+
+split!!
+   490
+
+split!!
+   490
+
+split!!
+   490
+
+Please take care!
+   490
+
+   490
+
+split!!
+   491
+
+split!!
+   491
+
+split!!
+   491
+
+split!!
+   491
+
+Please take care!
+   491
+
+   491
+
+split!!
+   492
+
+split!!
+   492
+
+split!!
+   492
+
+split!!
+   492
+
+split!!
+   492
+
+Please take care!
+   492
+
+   492
+
+split!!
+   493
+
+split!!
+   493
+
+split!!
+   493
+
+Please take care!
+   493
+
+   493
+
+split!!
+   494
+
+split!!
+   494
+
+split!!
+   494
+
+split!!
+   494
+
+Please take care!
+   494
+
+   494
+
+split!!
+   495
+
+split!!
+   495
+
+split!!
+   495
+
+split!!
+   495
+
+Please take care!
+   495
+
+   495
+
+split!!
+   496
+
+split!!
+   496
+
+split!!
+   496
+
+split!!
+   496
+
+split!!
+   496
+
+Please take care!
+   496
+
+   496
+
+split!!
+   497
+
+split!!
+   497
+
+split!!
+   497
+
+split!!
+   497
+
+Please take care!
+   497
+
+   497
+
+split!!
+   498
+
+split!!
+   498
+
+split!!
+   498
+
+split!!
+   498
+
+split!!
+   498
+
+split!!
+   498
+
+Please take care!
+   498
+
+   498
+
+split!!
+   499
+
+split!!
+   499
+
+split!!
+   499
+
+split!!
+   499
+
+split!!
+   499
+
+split!!
+   499
+
+split!!
+   499
+
+Please take care!
+   499
+
+   499
+
+split!!
+   500
+
+split!!
+   500
+
+split!!
+   500
+
+split!!
+   500
+
+split!!
+   500
+
+Please take care!
+   500
+
+   500
+
+split!!
+   501
+
+split!!
+   501
+
+split!!
+   501
+
+split!!
+   501
+
+Please take care!
+   501
+
+   501
+
+split!!
+   502
+
+split!!
+   502
+
+split!!
+   502
+
+Please take care!
+   502
+
+   502
+
+split!!
+   503
+
+split!!
+   503
+
+split!!
+   503
+
+split!!
+   503
+
+Please take care!
+   503
+
+   503
+
+split!!
+   504
+
+split!!
+   504
+
+split!!
+   504
+
+split!!
+   504
+
+Please take care!
+   504
+
+   504
+
+split!!
+   505
+
+split!!
+   505
+
+split!!
+   505
+
+split!!
+   505
+
+Please take care!
+   505
+
+   505
+
+split!!
+   506
+
+split!!
+   506
+
+split!!
+   506
+
+split!!
+   506
+
+Please take care!
+   506
+
+   506
+
+split!!
+   507
+
+split!!
+   507
+
+split!!
+   507
+
+split!!
+   507
+
+Please take care!
+   507
+
+   507
+
+split!!
+   508
+
+split!!
+   508
+
+split!!
+   508
+
+split!!
+   508
+
+split!!
+   508
+
+Please take care!
+   508
+
+   508
+
+split!!
+   509
+
+split!!
+   509
+
+split!!
+   509
+
+split!!
+   509
+
+split!!
+   509
+
+Please take care!
+   509
+
+   509
+
+split!!
+   510
+
+split!!
+   510
+
+split!!
+   510
+
+split!!
+   510
+
+split!!
+   510
+
+Please take care!
+   510
+
+   510
+
+split!!
+   511
+
+split!!
+   511
+
+split!!
+   511
+
+split!!
+   511
+
+split!!
+   511
+
+Please take care!
+   511
+
+   511
+
+split!!
+   512
+
+split!!
+   512
+
+split!!
+   512
+
+split!!
+   512
+
+split!!
+   512
+
+split!!
+   512
+
+split!!
+   512
+
+split!!
+   512
+
+Please take care!
+   512
+
+   512
+
+split!!
+   513
+
+split!!
+   513
+
+split!!
+   513
+
+split!!
+   513
+
+Please take care!
+   513
+
+   513
+
+split!!
+   514
+
+split!!
+   514
+
+split!!
+   514
+
+Please take care!
+   514
+
+   514
+
+split!!
+   515
+
+split!!
+   515
+
+Please take care!
+   515
+
+   515
+
+split!!
+   516
+
+split!!
+   516
+
+Please take care!
+   516
+
+   516
+
+split!!
+   517
+
+Please take care!
+   517
+
+   517
+
+split!!
+   518
+
+Please take care!
+   518
+
+   518
+
+Please take care!
+   519
+
+   519
+
+split!!
+   520
+
+Please take care!
+   520
+
+   520
+
+split!!
+   521
+
+split!!
+   521
+
+Please take care!
+   521
+
+   521
+
+split!!
+   522
+
+split!!
+   522
+
+split!!
+   522
+
+Please take care!
+   522
+
+   522
+
+split!!
+   523
+
+split!!
+   523
+
+split!!
+   523
+
+Please take care!
+   523
+
+   523
+
+split!!
+   524
+
+split!!
+   524
+
+Please take care!
+   524
+
+   524
+
+split!!
+   525
+
+split!!
+   525
+
+Please take care!
+   525
+
+   525
+
+split!!
+   526
+
+Please take care!
+   526
+
+   526
+
+split!!
+   527
+
+Please take care!
+   527
+
+   527
+
+split!!
+   528
+
+split!!
+   528
+
+split!!
+   528
+
+Please take care!
+   528
+
+   528
+
+split!!
+   529
+
+split!!
+   529
+
+Please take care!
+   529
+
+   529
+
+split!!
+   530
+
+split!!
+   530
+
+split!!
+   530
+
+Please take care!
+   530
+
+   530
+
+split!!
+   531
+
+Please take care!
+   531
+
+   531
+
+split!!
+   532
+
+split!!
+   532
+
+split!!
+   532
+
+split!!
+   532
+
+Please take care!
+   532
+
+   532
+
+split!!
+   533
+
+split!!
+   533
+
+split!!
+   533
+
+split!!
+   533
+
+Please take care!
+   533
+
+   533
+
+split!!
+   534
+
+split!!
+   534
+
+Please take care!
+   534
+
+   534
+
+split!!
+   535
+
+split!!
+   535
+
+Please take care!
+   535
+
+   535
+
+split!!
+   536
+
+Please take care!
+   536
+
+   536
+
+split!!
+   537
+
+split!!
+   537
+
+Please take care!
+   537
+
+   537
+
+split!!
+   538
+
+split!!
+   538
+
+split!!
+   538
+
+split!!
+   538
+
+split!!
+   538
+
+Please take care!
+   538
+
+   538
+
+split!!
+   539
+
+split!!
+   539
+
+split!!
+   539
+
+split!!
+   539
+
+Please take care!
+   539
+
+   539
+
+split!!
+   540
+
+split!!
+   540
+
+split!!
+   540
+
+Please take care!
+   540
+
+   540
+
+split!!
+   541
+
+Please take care!
+   541
+
+   541
+
+Please take care!
+   542
+
+   542
+
+split!!
+   543
+
+split!!
+   543
+
+Please take care!
+   543
+
+   543
+
+split!!
+   544
+
+Please take care!
+   544
+
+   544
+
+split!!
+   545
+
+Please take care!
+   545
+
+   545
+
+split!!
+   546
+
+Please take care!
+   546
+
+   546
+
+split!!
+   547
+
+split!!
+   547
+
+Please take care!
+   547
+
+   547
+
+Please take care!
+   548
+
+   548
+
+Please take care!
+   549
+
+   549
+
+split!!
+   550
+
+Please take care!
+   550
+
+   550
+
+Please take care!
+   551
+
+   551
+
+Please take care!
+   552
+
+   552
+
+split!!
+   553
+
+Please take care!
+   553
+
+   553
+
+Please take care!
+   554
+
+   554
+
+Please take care!
+   555
+
+   555
+
+split!!
+   556
+
+Please take care!
+   556
+
+   556
+
+Please take care!
+   557
+
+   557
+
+Please take care!
+   558
+
+   558
+
+Please take care!
+   559
+
+   559
+
+Please take care!
+   560
+
+   560
+
+split!!
+   561
+
+split!!
+   561
+
+Please take care!
+   561
+
+   561
+
+split!!
+   562
+
+split!!
+   562
+
+Please take care!
+   562
+
+   562
+
+split!!
+   563
+
+split!!
+   563
+
+Please take care!
+   563
+
+   563
+
+split!!
+   564
+
+Please take care!
+   564
+
+   564
+
+split!!
+   565
+
+split!!
+   565
+
+Please take care!
+   565
+
+   565
+
+split!!
+   566
+
+split!!
+   566
+
+Please take care!
+   566
+
+   566
+
+split!!
+   567
+
+Please take care!
+   567
+
+   567
+
+split!!
+   568
+
+Please take care!
+   568
+
+   568
+
+Please take care!
+   569
+
+   569
+
+Please take care!
+   570
+
+   570
+
+split!!
+   571
+
+split!!
+   571
+
+Please take care!
+   571
+
+   571
+
+split!!
+   572
+
+split!!
+   572
+
+Please take care!
+   572
+
+   572
+
+split!!
+   573
+
+split!!
+   573
+
+split!!
+   573
+
+Please take care!
+   573
+
+   573
+
+split!!
+   574
+
+split!!
+   574
+
+Please take care!
+   574
+
+   574
+
+split!!
+   575
+
+split!!
+   575
+
+Please take care!
+   575
+
+   575
+
+split!!
+   576
+
+split!!
+   576
+
+Please take care!
+   576
+
+   576
+
+Please take care!
+   577
+
+   577
+
+Please take care!
+   578
+
+   578
+
+Please take care!
+   579
+
+   579
+
+Please take care!
+   580
+
+   580
+
+split!!
+   581
+
+split!!
+   581
+
+Please take care!
+   581
+
+   581
+
+split!!
+   582
+
+split!!
+   582
+
+Please take care!
+   582
+
+   582
+
+split!!
+   583
+
+split!!
+   583
+
+Please take care!
+   583
+
+   583
+
+split!!
+   584
+
+Please take care!
+   584
+
+   584
+
+split!!
+   585
+
+Please take care!
+   585
+
+   585
+
+split!!
+   586
+
+Please take care!
+   586
+
+   586
+
+split!!
+   587
+
+split!!
+   587
+
+Please take care!
+   587
+
+   587
+
+split!!
+   588
+
+split!!
+   588
+
+Please take care!
+   588
+
+   588
+
+split!!
+   589
+
+Please take care!
+   589
+
+   589
+
+split!!
+   590
+
+Please take care!
+   590
+
+   590
+
+split!!
+   591
+
+Please take care!
+   591
+
+   591
+
+Please take care!
+   592
+
+   592
+
+split!!
+   593
+
+Please take care!
+   593
+
+   593
+
+split!!
+   594
+
+Please take care!
+   594
+
+   594
+
+split!!
+   595
+
+Please take care!
+   595
+
+   595
+
+split!!
+   596
+
+split!!
+   596
+
+split!!
+   596
+
+Please take care!
+   596
+
+   596
+
+split!!
+   597
+
+split!!
+   597
+
+split!!
+   597
+
+split!!
+   597
+
+split!!
+   597
+
+split!!
+   597
+
+split!!
+   597
+
+split!!
+   597
+
+Please take care!
+   597
+
+   597
+
+split!!
+   598
+
+split!!
+   598
+
+split!!
+   598
+
+split!!
+   598
+
+split!!
+   598
+
+Please take care!
+   598
+
+   598
+
+split!!
+   599
+
+split!!
+   599
+
+split!!
+   599
+
+Please take care!
+   599
+
+   599
+
+split!!
+   600
+
+split!!
+   600
+
+split!!
+   600
+
+split!!
+   600
+
+Please take care!
+   600
+
+   600
+
+split!!
+   601
+
+split!!
+   601
+
+split!!
+   601
+
+split!!
+   601
+
+split!!
+   601
+
+split!!
+   601
+
+Please take care!
+   601
+
+   601
+
+split!!
+   602
+
+split!!
+   602
+
+split!!
+   602
+
+split!!
+   602
+
+split!!
+   602
+
+split!!
+   602
+
+Please take care!
+   602
+
+   602
+
+split!!
+   603
+
+split!!
+   603
+
+split!!
+   603
+
+split!!
+   603
+
+split!!
+   603
+
+split!!
+   603
+
+split!!
+   603
+
+split!!
+   603
+
+split!!
+   603
+
+split!!
+   603
+
+Please take care!
+   603
+
+   603
+
+split!!
+   604
+
+split!!
+   604
+
+split!!
+   604
+
+split!!
+   604
+
+split!!
+   604
+
+split!!
+   604
+
+Please take care!
+   604
+
+   604
+
+split!!
+   605
+
+split!!
+   605
+
+split!!
+   605
+
+split!!
+   605
+
+split!!
+   605
+
+split!!
+   605
+
+split!!
+   605
+
+Please take care!
+   605
+
+   605
+
+split!!
+   606
+
+split!!
+   606
+
+split!!
+   606
+
+split!!
+   606
+
+split!!
+   606
+
+split!!
+   606
+
+split!!
+   606
+
+split!!
+   606
+
+split!!
+   606
+
+Please take care!
+   606
+
+   606
+
+split!!
+   607
+
+split!!
+   607
+
+split!!
+   607
+
+split!!
+   607
+
+split!!
+   607
+
+split!!
+   607
+
+split!!
+   607
+
+Please take care!
+   607
+
+   607
+
+split!!
+   608
+
+split!!
+   608
+
+split!!
+   608
+
+split!!
+   608
+
+split!!
+   608
+
+split!!
+   608
+
+Please take care!
+   608
+
+   608
+
+split!!
+   609
+
+split!!
+   609
+
+split!!
+   609
+
+split!!
+   609
+
+split!!
+   609
+
+Please take care!
+   609
+
+   609
+
+split!!
+   610
+
+split!!
+   610
+
+split!!
+   610
+
+split!!
+   610
+
+split!!
+   610
+
+split!!
+   610
+
+Please take care!
+   610
+
+   610
+
+split!!
+   611
+
+split!!
+   611
+
+split!!
+   611
+
+split!!
+   611
+
+Please take care!
+   611
+
+   611
+
+split!!
+   612
+
+split!!
+   612
+
+split!!
+   612
+
+Please take care!
+   612
+
+   612
+
+split!!
+   613
+
+split!!
+   613
+
+split!!
+   613
+
+Please take care!
+   613
+
+   613
+
+split!!
+   614
+
+split!!
+   614
+
+Please take care!
+   614
+
+   614
+
+split!!
+   615
+
+Please take care!
+   615
+
+   615
+
+split!!
+   616
+
+split!!
+   616
+
+Please take care!
+   616
+
+   616
+
+split!!
+   617
+
+split!!
+   617
+
+Please take care!
+   617
+
+   617
+
+split!!
+   618
+
+Please take care!
+   618
+
+   618
+
+split!!
+   619
+
+Please take care!
+   619
+
+   619
+
+split!!
+   620
+
+Please take care!
+   620
+
+   620
+
+split!!
+   621
+
+Please take care!
+   621
+
+   621
+
+split!!
+   622
+
+Please take care!
+   622
+
+   622
+
+Please take care!
+   623
+
+   623
+
+Please take care!
+   624
+
+   624
+
+split!!
+   625
+
+split!!
+   625
+
+Please take care!
+   625
+
+   625
+
+split!!
+   626
+
+split!!
+   626
+
+Please take care!
+   626
+
+   626
+
+split!!
+   627
+
+split!!
+   627
+
+split!!
+   627
+
+Please take care!
+   627
+
+   627
+
+split!!
+   628
+
+split!!
+   628
+
+split!!
+   628
+
+Please take care!
+   628
+
+   628
+
+split!!
+   629
+
+split!!
+   629
+
+split!!
+   629
+
+Please take care!
+   629
+
+   629
+
+split!!
+   630
+
+split!!
+   630
+
+split!!
+   630
+
+split!!
+   630
+
+Please take care!
+   630
+
+   630
+
+split!!
+   631
+
+split!!
+   631
+
+split!!
+   631
+
+split!!
+   631
+
+Please take care!
+   631
+
+   631
+
+split!!
+   632
+
+split!!
+   632
+
+split!!
+   632
+
+split!!
+   632
+
+Please take care!
+   632
+
+   632
+
+split!!
+   633
+
+split!!
+   633
+
+split!!
+   633
+
+split!!
+   633
+
+split!!
+   633
+
+Please take care!
+   633
+
+   633
+
+split!!
+   634
+
+split!!
+   634
+
+split!!
+   634
+
+split!!
+   634
+
+split!!
+   634
+
+split!!
+   634
+
+Please take care!
+   634
+
+   634
+
+split!!
+   635
+
+split!!
+   635
+
+split!!
+   635
+
+split!!
+   635
+
+split!!
+   635
+
+split!!
+   635
+
+Please take care!
+   635
+
+   635
+
+split!!
+   636
+
+split!!
+   636
+
+split!!
+   636
+
+split!!
+   636
+
+split!!
+   636
+
+Please take care!
+   636
+
+   636
+
+split!!
+   637
+
+split!!
+   637
+
+split!!
+   637
+
+split!!
+   637
+
+Please take care!
+   637
+
+   637
+
+split!!
+   638
+
+split!!
+   638
+
+Please take care!
+   638
+
+   638
+
+split!!
+   639
+
+split!!
+   639
+
+Please take care!
+   639
+
+   639
+
+split!!
+   640
+
+split!!
+   640
+
+Please take care!
+   640
+
+   640
+
+Please take care!
+   641
+
+   641
+
+Please take care!
+   642
+
+   642
+
+split!!
+   643
+
+Please take care!
+   643
+
+   643
+
+split!!
+   644
+
+split!!
+   644
+
+Please take care!
+   644
+
+   644
+
+split!!
+   645
+
+split!!
+   645
+
+split!!
+   645
+
+split!!
+   645
+
+Please take care!
+   645
+
+   645
+
+split!!
+   646
+
+split!!
+   646
+
+split!!
+   646
+
+split!!
+   646
+
+split!!
+   646
+
+split!!
+   646
+
+Please take care!
+   646
+
+   646
+
+split!!
+   647
+
+split!!
+   647
+
+split!!
+   647
+
+split!!
+   647
+
+split!!
+   647
+
+split!!
+   647
+
+Please take care!
+   647
+
+   647
+
+split!!
+   648
+
+split!!
+   648
+
+split!!
+   648
+
+split!!
+   648
+
+split!!
+   648
+
+Please take care!
+   648
+
+   648
+
+split!!
+   649
+
+split!!
+   649
+
+split!!
+   649
+
+split!!
+   649
+
+Please take care!
+   649
+
+   649
+
+split!!
+   650
+
+split!!
+   650
+
+split!!
+   650
+
+split!!
+   650
+
+Please take care!
+   650
+
+   650
+
+split!!
+   651
+
+split!!
+   651
+
+split!!
+   651
+
+split!!
+   651
+
+split!!
+   651
+
+Please take care!
+   651
+
+   651
+
+split!!
+   652
+
+split!!
+   652
+
+split!!
+   652
+
+split!!
+   652
+
+split!!
+   652
+
+Please take care!
+   652
+
+   652
+
+split!!
+   653
+
+split!!
+   653
+
+split!!
+   653
+
+split!!
+   653
+
+Please take care!
+   653
+
+   653
+
+split!!
+   654
+
+split!!
+   654
+
+Please take care!
+   654
+
+   654
+
+split!!
+   655
+
+split!!
+   655
+
+split!!
+   655
+
+Please take care!
+   655
+
+   655
+
+split!!
+   656
+
+split!!
+   656
+
+split!!
+   656
+
+split!!
+   656
+
+split!!
+   656
+
+Please take care!
+   656
+
+   656
+
+split!!
+   657
+
+split!!
+   657
+
+split!!
+   657
+
+split!!
+   657
+
+Please take care!
+   657
+
+   657
+
+split!!
+   658
+
+split!!
+   658
+
+split!!
+   658
+
+split!!
+   658
+
+split!!
+   658
+
+split!!
+   658
+
+split!!
+   658
+
+Please take care!
+   658
+
+   658
+
+split!!
+   659
+
+split!!
+   659
+
+split!!
+   659
+
+split!!
+   659
+
+split!!
+   659
+
+split!!
+   659
+
+split!!
+   659
+
+split!!
+   659
+
+split!!
+   659
+
+Please take care!
+   659
+
+   659
+
+split!!
+   660
+
+split!!
+   660
+
+split!!
+   660
+
+split!!
+   660
+
+split!!
+   660
+
+split!!
+   660
+
+split!!
+   660
+
+Please take care!
+   660
+
+   660
+
+split!!
+   661
+
+split!!
+   661
+
+split!!
+   661
+
+Please take care!
+   661
+
+   661
+
+split!!
+   662
+
+Please take care!
+   662
+
+   662
+
+split!!
+   663
+
+Please take care!
+   663
+
+   663
+
+split!!
+   664
+
+Please take care!
+   664
+
+   664
+
+split!!
+   665
+
+split!!
+   665
+
+split!!
+   665
+
+split!!
+   665
+
+Please take care!
+   665
+
+   665
+
+split!!
+   666
+
+split!!
+   666
+
+split!!
+   666
+
+split!!
+   666
+
+split!!
+   666
+
+Please take care!
+   666
+
+   666
+
+split!!
+   667
+
+split!!
+   667
+
+Please take care!
+   667
+
+   667
+
+split!!
+   668
+
+split!!
+   668
+
+split!!
+   668
+
+Please take care!
+   668
+
+   668
+
+split!!
+   669
+
+split!!
+   669
+
+Please take care!
+   669
+
+   669
+
+split!!
+   670
+
+split!!
+   670
+
+split!!
+   670
+
+split!!
+   670
+
+Please take care!
+   670
+
+   670
+
+split!!
+   671
+
+split!!
+   671
+
+split!!
+   671
+
+split!!
+   671
+
+Please take care!
+   671
+
+   671
+
+split!!
+   672
+
+split!!
+   672
+
+split!!
+   672
+
+split!!
+   672
+
+split!!
+   672
+
+Please take care!
+   672
+
+   672
+
+split!!
+   673
+
+split!!
+   673
+
+split!!
+   673
+
+split!!
+   673
+
+Please take care!
+   673
+
+   673
+
+split!!
+   674
+
+split!!
+   674
+
+split!!
+   674
+
+split!!
+   674
+
+Please take care!
+   674
+
+   674
+
+split!!
+   675
+
+split!!
+   675
+
+split!!
+   675
+
+split!!
+   675
+
+split!!
+   675
+
+Please take care!
+   675
+
+   675
+
+split!!
+   676
+
+split!!
+   676
+
+split!!
+   676
+
+split!!
+   676
+
+split!!
+   676
+
+split!!
+   676
+
+Please take care!
+   676
+
+   676
+
+split!!
+   677
+
+split!!
+   677
+
+split!!
+   677
+
+Please take care!
+   677
+
+   677
+
+split!!
+   678
+
+split!!
+   678
+
+split!!
+   678
+
+split!!
+   678
+
+split!!
+   678
+
+Please take care!
+   678
+
+   678
+
+split!!
+   679
+
+split!!
+   679
+
+split!!
+   679
+
+split!!
+   679
+
+split!!
+   679
+
+Please take care!
+   679
+
+   679
+
+split!!
+   680
+
+split!!
+   680
+
+split!!
+   680
+
+Please take care!
+   680
+
+   680
+
+split!!
+   681
+
+split!!
+   681
+
+split!!
+   681
+
+Please take care!
+   681
+
+   681
+
+split!!
+   682
+
+split!!
+   682
+
+Please take care!
+   682
+
+   682
+
+split!!
+   683
+
+split!!
+   683
+
+Please take care!
+   683
+
+   683
+
+split!!
+   684
+
+Please take care!
+   684
+
+   684
+
+split!!
+   685
+
+split!!
+   685
+
+split!!
+   685
+
+split!!
+   685
+
+Please take care!
+   685
+
+   685
+
+split!!
+   686
+
+split!!
+   686
+
+split!!
+   686
+
+Please take care!
+   686
+
+   686
+
+split!!
+   687
+
+split!!
+   687
+
+split!!
+   687
+
+Please take care!
+   687
+
+   687
+
+split!!
+   688
+
+split!!
+   688
+
+Please take care!
+   688
+
+   688
+
+split!!
+   689
+
+split!!
+   689
+
+Please take care!
+   689
+
+   689
+
+split!!
+   690
+
+split!!
+   690
+
+Please take care!
+   690
+
+   690
+
+split!!
+   691
+
+split!!
+   691
+
+Please take care!
+   691
+
+   691
+
+split!!
+   692
+
+split!!
+   692
+
+Please take care!
+   692
+
+   692
+
+split!!
+   693
+
+Please take care!
+   693
+
+   693
+
+Please take care!
+   694
+
+   694
+
+Please take care!
+   695
+
+   695
+
+Please take care!
+   696
+
+   696
+
+Please take care!
+   697
+
+   697
+
+split!!
+   698
+
+Please take care!
+   698
+
+   698
+
+split!!
+   699
+
+split!!
+   699
+
+split!!
+   699
+
+split!!
+   699
+
+Please take care!
+   699
+
+   699
+
+split!!
+   700
+
+split!!
+   700
+
+split!!
+   700
+
+Please take care!
+   700
+
+   700
+
+split!!
+   701
+
+split!!
+   701
+
+split!!
+   701
+
+Please take care!
+   701
+
+   701
+
+split!!
+   702
+
+split!!
+   702
+
+split!!
+   702
+
+Please take care!
+   702
+
+   702
+
+split!!
+   703
+
+split!!
+   703
+
+split!!
+   703
+
+split!!
+   703
+
+Please take care!
+   703
+
+   703
+
+split!!
+   704
+
+split!!
+   704
+
+split!!
+   704
+
+split!!
+   704
+
+Please take care!
+   704
+
+   704
+
+split!!
+   705
+
+Please take care!
+   705
+
+   705
+
+split!!
+   706
+
+Please take care!
+   706
+
+   706
+
+split!!
+   707
+
+Please take care!
+   707
+
+   707
+
+split!!
+   708
+
+   708
+
+split!!
+   709
+
+split!!
+   709
+
+Please take care!
+   709
+
+   709
+
+split!!
+   710
+
+Please take care!
+   710
+
+   710
+
+split!!
+   711
+
+   711
+
+split!!
+   712
+
+   712
+
+split!!
+   713
+
+split!!
+   713
+
+   713
+
+   714
+
+   715
+
+   716
+
+Please take care!
+   717
+
+   717
+
+split!!
+   718
+
+Please take care!
+   718
+
+   718
+
+split!!
+   719
+
+split!!
+   719
+
+Please take care!
+   719
+
+   719
+
+Please take care!
+   720
+
+   720
+
+split!!
+   721
+
+Please take care!
+   721
+
+   721
+
+split!!
+   722
+
+split!!
+   722
+
+Please take care!
+   722
+
+   722
+
+split!!
+   723
+
+split!!
+   723
+
+Please take care!
+   723
+
+   723
+
+split!!
+   724
+
+Please take care!
+   724
+
+   724
+
+split!!
+   725
+
+split!!
+   725
+
+Please take care!
+   725
+
+   725
+
+split!!
+   726
+
+Please take care!
+   726
+
+   726
+
+split!!
+   727
+
+Please take care!
+   727
+
+   727
+
+split!!
+   728
+
+Please take care!
+   728
+
+   728
+
+split!!
+   729
+
+Please take care!
+   729
+
+   729
+
+Please take care!
+   730
+
+   730
+
+Please take care!
+   731
+
+   731
+
+                   size: [400 160 731]
+                  class: 'double'
+              nan_count: 44960259
+           active_count: 46784000
+           finite_count: 1823741
+              lon_range: [80.1250 179.8750]
+              lat_range: [-59.8750 -20.1250]
+                   nums: 4
+            binary_rule: 'positive'
+    binary_active_count: 1823266
+        elapsed_seconds: 1.0761e+03
+               n_tracks: 4277
+

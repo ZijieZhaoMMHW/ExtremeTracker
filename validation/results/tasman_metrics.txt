@@ -1,0 +1,2 @@
+flag=0 radius_km=3433.244813642357 max_abs_error=4.948819132266635e-14 nan_mismatch=0 zero_mismatch=0 julia_seconds=27.049457458 matlab_seconds=81.715334292
+flag=1 radius_km=3433.244813642357 max_abs_error=1.0669243266647754e-13 nan_mismatch=0 zero_mismatch=0 julia_seconds=25.864174459 matlab_seconds=94.108783083

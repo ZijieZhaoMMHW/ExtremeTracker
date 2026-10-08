@@ -1,0 +1,2 @@
+regular_4d shape=(60, 30, 5, 12) seconds=0.000797834 allocated_bytes=1715312 tracks=1014
+LLC90_4d_sparse shape=(90, 90, 13, 3, 12) seconds=0.005516375 allocated_bytes=6883840 tracks=4808

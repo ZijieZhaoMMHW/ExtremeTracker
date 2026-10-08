@@ -1,0 +1,12 @@
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
+MAT = "23992714-dd62-5051-b70f-ba57cb901cac"
+MHWTracking = "f0a0ebf4-bd4a-4d67-a63c-cf9508070fc5"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+
+[compat]
+CairoMakie = "0.15"
+IJulia = "1"
+MAT = "0.12"
+julia = "1.10"

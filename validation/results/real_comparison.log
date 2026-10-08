@@ -1,0 +1,3 @@
+Loaded positive binary mask: (400, 160, 731); active=1823266
+Julia: seconds=35.947556541 allocated_bytes=7162051440 tracks=4277
+Dict{String, Any}("active" => 1823266, "allocated_bytes" => 7162051440, "tracks_julia" => 4277, "shape" => [400, 160, 731], "julia_version" => "1.12.3", "tracks_matlab" => 4277, "event_partition_equal" => true, "strict_fields_equal" => true, "nums" => 4, "seconds" => 35.947556541, "matlab_seconds" => 1076.095594709)

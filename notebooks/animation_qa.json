@@ -1,0 +1,35 @@
+[
+  {
+    "file": "07_tasman_event.gif",
+    "frames": 230,
+    "duration_ms": 500,
+    "total_seconds": 115,
+    "size": [
+      880,
+      430
+    ],
+    "bytes": 119467
+  },
+  {
+    "file": "07_tasman_norm0.gif",
+    "frames": 230,
+    "duration_ms": 500,
+    "total_seconds": 115,
+    "size": [
+      1100,
+      470
+    ],
+    "bytes": 1396223
+  },
+  {
+    "file": "07_tasman_norm1.gif",
+    "frames": 230,
+    "duration_ms": 500,
+    "total_seconds": 115,
+    "size": [
+      1100,
+      470
+    ],
+    "bytes": 7893290
+  }
+]

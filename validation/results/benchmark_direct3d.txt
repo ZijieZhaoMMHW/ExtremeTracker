@@ -1,0 +1,1 @@
+shape=(400, 160, 731) active=1823266 tracks=4573 raw_components=4618 seconds=0.269021458 allocated_bytes=176301264
