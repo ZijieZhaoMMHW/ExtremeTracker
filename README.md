@@ -1,4 +1,4 @@
-# MHWTracking.jl
+# ExtremeTracker.jl
 
 A Julia package port of the local MATLAB marine heatwave tracking code. It provides daily spatial patches linked by temporal overlap, independent direct three-dimensional connectivity, regular four-dimensional connectivity, ECCO LLC four-dimensional connectivity, spatial smoothing, and event normalization.
 
